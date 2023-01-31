@@ -1,0 +1,200 @@
+/*  Reset.
+    Propiedades para todos los documentos
+    */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*  Encabezado: sistema de navegacion 
+    Se genera una barra semitransparente con vínculos para los HTML */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.naviGroup {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-right: 20px;
+    opacity: 0.8;
+}
+
+.naviGroup img {
+    margin: 20px 20px 12px 20px;
+}
+
+.naviGroup ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.naviGroupElement {
+    margin: 30px 12px 20px 12px;
+}
+
+.naviGroupElement a {
+    color: gray;
+    text-decoration: none;
+}
+
+.naviLogo img {
+    width: 200px;
+    height: 40px;
+}
+
+/*  Principal: contenido ---------------------- 
+    Se aplica a la etiqueta main un estilo inmediato de flexbox columna */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  imageStack: un slideshow de 5 fotos de portada. 
+    Dentro de estos comentarios está la definición del div principal,
+    cada imagen que va dentro de cada <span> y la animación */
+.imageStack {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+}
+
+.slideShow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    animation: imageAnimation 30s ease-in-out infinite;
+}
+
+.slideShow li:nth-child(1) span {
+    background-image: url(../img/chile-slideshow1.jpg);
+    animation-delay: 0;
+}
+
+.slideShow li:nth-child(2) span {
+    background-image: url(../img/chile-slideshow2.jpg);
+    animation-delay: 6s;
+}
+
+.slideShow li:nth-child(3) span {
+    background-image: url(../img/chile-slideshow3.jpg);
+    animation-delay: 12s;
+}
+
+.slideShow li:nth-child(4) span {
+    background-image: url(../img/chile-slideshow4.jpg);
+    animation-delay: 18s;
+}
+
+.slideShow li:nth-child(5) span {
+    background-image: url(../img/chile-slideshow5.jpg);
+    animation-delay: 24s;
+}
+
+/* fixme: hay que modificar los timings para que las imágenes se sucedan bien */
+@keyframes imageAnimation {
+    0% { opacity: 1; }
+    16% { opacity: 1; }
+    23% { opacity: 0;}
+    93% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* floatingHeader es el h2 que va dentro del div imageStack
+    Es un título simple */
+.floatingHeader {
+    z-index: 20;
+    font-size: 60px;
+    line-height: 92px;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    letter-spacing: -3px;
+    width: 80%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+/*  Workaround para que el texto fluya. El alto corresponde al 80% de la vista
+    (view height)   */
+.spacer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.secondaryHeader {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.secondaryHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+.secondaryFloating {
+    z-index: 20;
+    font-size: 36pt;
+    line-height: 56pt;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    letter-spacing: -2px;
+    width: 80%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.mainText {
+    position: relative;
+    display: flex;
+    margin: 30px;
+}
+
+.mainText h3 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+}
+
+.mainText p {
+    font-size: 14pt;
+    margin-bottom: 6px;
+}
+
+.mainParagraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Pie de página: hay que terminarlo */
+footer {
+    background-color: grey;
+    size: 100%;
+    padding: 40px 80px 20px 40px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
