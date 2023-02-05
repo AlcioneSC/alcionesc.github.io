@@ -41,6 +41,9 @@ header {
 
 .naviGroupElement {
     margin: 30px 12px 20px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
 }
 
 .naviGroupElement a {
@@ -54,11 +57,10 @@ header {
 }
 
 /*  Principal: contenido ---------------------- 
-    Se aplica a la etiqueta main un estilo inmediato de flexbox columna */
-main {
-    display: flex;
-    flex-direction: column;
-}
+    Ya no vamos a aplicar a la etiqueta main un estilo inmediato de flexbox columna.
+    Esta función se la vamos a dejar a Bootstrap
+    */
+
 
 /*  imageStack: un slideshow de 5 fotos de portada. 
     Dentro de estos comentarios está la definición del div principal,
@@ -168,7 +170,9 @@ main {
 
 .mainText {
     position: relative;
-    display: flex;
+    /*  Vamos a sacar la definición de flex y grid de aquí, ahora que estamos usando Bootstrap
+        display: flex;
+        */
     margin: 30px;
 }
 
