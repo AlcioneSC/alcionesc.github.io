@@ -19,39 +19,17 @@ header {
 .naviGroup {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding-right: 20px;
+    padding-right: 10px;
     opacity: 0.8;
 }
 
-.naviGroup img {
-    margin: 20px 20px 12px 20px;
-}
-
-.naviGroup ul {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
+.nav-item {
     text-transform: uppercase;
     font-weight: bold;
-    color: white;
-}
-
-.naviGroupElement {
-    margin: 30px 12px 20px 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-}
-
-.naviGroupElement a {
-    color: gray;
-    text-decoration: none;
 }
 
 .naviLogo img {
+    margin: 10px;
     width: 200px;
     height: 40px;
 }
@@ -61,14 +39,20 @@ header {
     Esta función se la vamos a dejar a Bootstrap
     */
 
-
 /*  imageStack: un slideshow de 5 fotos de portada. 
     Dentro de estos comentarios está la definición del div principal,
-    cada imagen que va dentro de cada <span> y la animación */
+    cada imagen que va dentro de cada <span> y la animación
+    */
 .imageStack {
     width: 100%;
     height: 80%;
     position: absolute;
+}
+
+/*  Esto se asegura de que los puntos de la lista de imágenes no sea visible
+    */
+.slideShow li {
+    list-style: none;
 }
 
 .slideShow li span {
@@ -112,11 +96,10 @@ header {
 
 /* fixme: hay que modificar los timings para que las imágenes se sucedan bien */
 @keyframes imageAnimation {
-    0% { opacity: 1; }
-    16% { opacity: 1; }
-    23% { opacity: 0;}
-    93% { opacity: 0; }
-    100% { opacity: 1; }
+    0% { opacity: 0; }
+    4%  { opacity: 1; }
+    20% { opacity: 1; }
+    23% { opacity: 0; }
 }
 
 /* floatingHeader es el h2 que va dentro del div imageStack
@@ -124,14 +107,21 @@ header {
 .floatingHeader {
     z-index: 20;
     font-size: 60px;
-    line-height: 92px;
-    color: white;
-    text-shadow: 2px 2px 10px black;
-    letter-spacing: -3px;
     width: 80%;
     position: absolute;
     bottom: 30px;
     left: 30px;
+}
+
+/*  Con Bootstrap el h2 de floatingHeader se rompió. A arreglar
+    */
+.floatingHeader h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    letter-spacing: -0.05em;
+    line-height: 1.1em;
 }
 
 /*  Workaround para que el texto fluya. El alto corresponde al 80% de la vista
@@ -159,13 +149,21 @@ header {
     z-index: 20;
     font-size: 36pt;
     line-height: 56pt;
-    color: white;
-    text-shadow: 2px 2px 10px black;
-    letter-spacing: -2px;
     width: 80%;
     position: absolute;
     bottom: 30px;
     left: 30px;
+}
+
+/*  Con Bootstrap el h2 de secondaryFloating se rompió. A arreglar
+    */
+
+.secondaryFloating h2 {
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    letter-spacing: -2px;
 }
 
 .mainText {
