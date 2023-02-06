@@ -44,9 +44,9 @@
 }
 
 .slideShow li span {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     color: transparent;
@@ -58,36 +58,35 @@
 }
 
 .slideShow li:nth-child(1) span {
-    background-image: url(../img/chile-slideshow1.jpg);
-    animation-delay: 0;
+    background-image: url(../img/chile-slideshow6.jpg);
+    animation-delay: -2s;
 }
 
 .slideShow li:nth-child(2) span {
     background-image: url(../img/chile-slideshow2.jpg);
-    animation-delay: 6s;
+    animation-delay: 4s;
 }
 
 .slideShow li:nth-child(3) span {
     background-image: url(../img/chile-slideshow3.jpg);
-    animation-delay: 12s;
+    animation-delay: 10s;
 }
 
 .slideShow li:nth-child(4) span {
     background-image: url(../img/chile-slideshow4.jpg);
-    animation-delay: 18s;
+    animation-delay: 16s;
 }
 
 .slideShow li:nth-child(5) span {
     background-image: url(../img/chile-slideshow5.jpg);
-    animation-delay: 24s;
+    animation-delay: 22s;
 }
 
-/* fixme: hay que modificar los timings para que las imágenes se sucedan bien */
 @keyframes imageAnimation {
     0% { opacity: 0; }
     4%  { opacity: 1; }
     20% { opacity: 1; }
-    23% { opacity: 0; }
+    24% { opacity: 0; }
 }
 
 /* floatingHeader es el h2 que va dentro del div imageStack
@@ -111,14 +110,18 @@
     line-height: 1.1em;
 }
 
-/*  Workaround para que el texto fluya. El alto corresponde al 80% de la vista
-    (view height)   */
+/*  Workaround para que el texto fluya en la página de título.
+    El alto corresponde al 82% de la vista (view height)
+    */
 .spacer {
     position: relative;
     width: 100%;
     height: 82vh;
 }
 
+/*  Como secondaryHeader no necesita tener posición absoluta,
+    podemos posicionarlo relativamente para que todo fluya.
+    */
 .secondaryHeader {
     width: 100%;
     height: 40vh;
@@ -155,22 +158,23 @@
     margin: 1.5em;
 }
 
-.mainText h3 {
+.mainParagraph {
+    margin-top: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.mainParagraph h3 {
     font-size: 3em;
     font-weight: bold;
     letter-spacing: -0.05em;
     margin-bottom: 0.2em;
 }
 
-.mainText p {
+.mainParagraph p {
     font-size: 1.1em;
     margin-bottom: 0.2em;
 }
 
-.mainParagraph {
-    margin-top: 1.2em;
-    margin-bottom: 1.5em;
-}
 
 /* Pie de página: hay que terminarlo */
 footer {
