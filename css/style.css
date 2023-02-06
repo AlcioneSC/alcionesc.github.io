@@ -9,18 +9,11 @@
 }
 
 /*  Encabezado: sistema de navegacion 
-    Se genera una barra semitransparente con vínculos para los HTML */
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-}
-
-.naviGroup {
-    display: flex;
-    flex-flow: row nowrap;
-    padding-right: 0.2em;
-    opacity: 0.8;
+    Se genera una barra semitransparente con vínculos para los HTML.
+    Bootstrap nos sobreescribió todo, pero parece que aún podemos hacer un override
+    */
+.navbar {
+    opacity: 0.85;
 }
 
 .nav-item {
@@ -33,11 +26,6 @@ header {
     width: 10em;
     height: 2em;
 }
-
-/*  Principal: contenido ---------------------- 
-    Ya no vamos a aplicar a la etiqueta main un estilo inmediato de flexbox columna.
-    Esta función se la vamos a dejar a Bootstrap
-    */
 
 /*  imageStack: un slideshow de 5 fotos de portada. 
     Dentro de estos comentarios está la definición del div principal,
@@ -128,7 +116,7 @@ header {
 .spacer {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 82vh;
 }
 
 .secondaryHeader {
@@ -154,7 +142,6 @@ header {
 
 /*  Con Bootstrap el h2 de secondaryFloating se rompió. A arreglar
     */
-
 .secondaryFloating h2 {
     font-size: 4em;
     line-height: 1em;
