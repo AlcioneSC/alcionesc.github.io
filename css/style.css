@@ -215,7 +215,6 @@
     z-index: 999;
 }
 
-
 .mainText {
     margin: 1.5em;
 }
@@ -254,22 +253,59 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    padding: 3em;
+    padding: 4em 3em 3em 3em;
     overflow: hidden;
+    position: relative;
+    align-items: normal;
 }
 
 .promotionGridItem h3 {
-    font-size: 3.5em;
     font-weight: bold;
+    font-size: 3.5em;
+    line-height: 0.5em;
     letter-spacing: -0.05em;
-    margin-bottom: 0.2em;
 }
 
 .promotionGridItem h5 {
-    font-size: 1.5em;
     font-weight: bold;
+    font-size: 1.5em;
     letter-spacing: -0.05em;
-    margin-bottom: 0.2em;
+}
+
+#accelSquare {
+    padding: 2em;
+    background-image: url("../img/visa-1-bl.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#rejectionSquare {
+    padding: 2em;
+    background-image: url("../img/visa-2-bl.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#reopeningSquare {
+    padding: 2em;
+    background-image: url("../img/visa-3-bl.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#assistanceSquare {
+    padding: 2em;
+    background-image: url("../img/visa-4-bl.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 /*  Celulares y pantalla pequeña  */
