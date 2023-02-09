@@ -222,6 +222,8 @@
 .mainParagraph {
     margin-top: 1.2em;
     margin-bottom: 1.5em;
+    grid-column: span 5;
+    padding-right: 2em;
 }
 
 .mainParagraph h3 {
@@ -325,10 +327,31 @@
     backdrop-filter: blur(10px) brightness(50%);
 }
 
+.square {
+    background-color: blue;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    right: 2px;
+    top: 31px;
+}
+
+.newsTab {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.mainForm {
+    grid-column: span 6;
+    padding: 3em;
+}
+
 /*  Celulares y pantalla pequeña  */
 @media screen and (max-width: 768px) {
     .highlightedGridItem {
-        grid-column: span 6;
+        grid-column: span 2;
     }
 
     .floatingHeader h2 {
