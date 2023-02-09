@@ -270,42 +270,59 @@
     font-weight: bold;
     font-size: 1.5em;
     letter-spacing: -0.05em;
+    text-shadow: 2px 2px 2px black;
 }
 
 #accelSquare {
-    padding: 2em;
-    background-image: url("../img/visa-1-bl.jpg");
+    background-image: url("../img/visa-tiempo.jpg");
     background-position: center;
     background-size: cover;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    padding: 1em;
+}
+
+#accelSquare div {
+    padding: 1em;
+    backdrop-filter: blur(10px) brightness(50%);
 }
 
 #rejectionSquare {
-    padding: 2em;
-    background-image: url("../img/visa-2-bl.jpg");
+    background-image: url("../img/visa-rechazo.jpg");
     background-position: center;
     background-size: cover;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    padding: 1em;
+}
+
+#rejectionSquare div {
+    padding: 1em;
+    backdrop-filter: blur(10px) brightness(50%);
 }
 
 #reopeningSquare {
-    padding: 2em;
-    background-image: url("../img/visa-3-bl.jpg");
+    background-image: url("../img/visa-reapertura.jpg");
     background-position: center;
     background-size: cover;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    padding: 1em;
+}
+
+#reopeningSquare div {
+    padding: 1em;
+    backdrop-filter: blur(10px) brightness(50%);
 }
 
 #assistanceSquare {
-    padding: 2em;
-    background-image: url("../img/visa-4-bl.jpg");
+    background-image: url("../img/visa-asesoria.jpg");
     background-position: center;
     background-size: cover;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    padding: 1em;
+}
+
+#assistanceSquare div {
+    padding: 1em;
+    backdrop-filter: blur(10px) brightness(50%);
 }
 
 /*  Celulares y pantalla pequeña  */
@@ -342,7 +359,7 @@
     }
 
     .promotionGridItem {
-        padding: 1em;
+        padding: 2em 1em 1em 1em;
     }
 
     .promotionGridItem h3 {
