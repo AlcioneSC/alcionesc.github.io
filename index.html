@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Enlace a Bootstrap -->
-    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="./css/bootstrap.min.css" as="style">
+    <link rel="preload" href="./js/bootstrap.min.js" as="script">
+    <link rel="preload" href="https://cdn.curator.io/published/aa325402-0667-40e9-a41e-ef99d050522c.js" as="script">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Asistencia Migratoria Integral</title>
@@ -72,25 +74,31 @@
             </div>
             <div class="highlightedGridItem">
                 <h3>Sin demoras.</h3>
-                <p>Las solicitudes de visa de residente y permanencias definitivas se están demorando hasta <strong>tres a&ntilde;os</strong> en ser resueltas, trayendo incertidumbre al migrante, a la vez que <strong>rabia</strong>, al ver c&oacute;mo nada sale bien a pesar de que uno intenta mantenerse en la legalidad.</p>
+                <p>Las solicitudes de visa de residente y permanencias definitivas se están demorando hasta <strong>tres a&ntilde;os</strong> en ser resueltas, trayendo <strong>incertidumbre</strong> al migrante, a la vez que <strong>rabia</strong>, al ver c&oacute;mo nada sale bien a pesar de que uno intenta mantenerse en la legalidad.</p>
                 <p>Usted necesita un equipo legal que sea capaz de combatir esta demora mediante <strong>recursos judiciales</strong> que le den certezas.</p>
             </div>
             <div class="highlightedGridItem">
                 <h3>Sin contratiempos.</h3>
-                <p>No crea que, cuando le rechazan una solicitud de visa o de permanencia definitiva, la decisi&oacute;n tomada es justa o es correcta. El Servicio Nacional de Migraciones <strong>se equivoca, bastante</strong>, y por eso siempre es posible revertir un rechazo.</p>
-                <p>Usted necesita un equipo legal que tenga el conocimiento jur&iacute;dico para revertir un rechazo de visa. No olvide que tiene apenas 30 d&iacute;as para reclamar.</p>
-            </div>
-        </div>
-
-        <div class="presentationLayer">
-            <div class="presentationMainTitle">
-                <h3>Un servicio de siete estrellas.</h3>
+                <p>No crea que, cuando le rechazan una solicitud de visa o de permanencia definitiva, la decisi&oacute;n tomada es justa o  correcta. El Servicio Nacional de Migraciones <strong>se equivoca, bastante</strong>, y por eso siempre es posible revertir un rechazo.</p>
+                <p>Usted necesita un equipo legal que tenga el <strong>conocimiento jur&iacute;dico necesario</strong> para revertir un rechazo de visa.</p>
             </div>
             <div class="presentationMainCard">
-                <p><strong>Ernesto Manr&iacute;quez Mendoza</strong> es abogado, Licenciado en Ciencias Jur&iacute;dicas y Sociales de la Universidad de Chile, con Mag&iacute;ster en Derecho Administrativo de la Pontificia Universidad Cat&oacute;lica de Valpara&iacute;so.</p>
-                <p>Ha litigado en <strong>cientos de casos</strong> llevados adelante en favor, prinicpalmente, de la comunidad venezolana. Ha colaborado en la reunificaci&oacute;n familiar de m&aacute;s de <strong>100 familias</strong>, quienes han podido inmigrar legalmente a Chile.</p>
+                <div class="presentationImageCard">
+                    <img src="./img/ernesto-manriquez.png" alt="...">
+                </div>
+                <div class="presentationTextCard">
+                    <div class="presentationMainTitle">
+                        <h3>Un servicio de siete estrellas.</h3>
+                    </div>
+                    <p><strong>Ernesto Manr&iacute;quez Mendoza</strong> es abogado, Licenciado en Ciencias Jur&iacute;dicas y Sociales de la Universidad de Chile, con Mag&iacute;ster en Derecho Administrativo de la Pontificia Universidad Cat&oacute;lica de Valpara&iacute;so.</p>
+                    <p>Ha litigado en <strong>cientos de casos</strong> llevados adelante en favor de extranjeros migrantes en Chile, principalmente, de la comunidad venezolana. Ha colaborado en la reunificaci&oacute;n familiar de m&aacute;s de <strong>100 familias</strong>, quienes han podido inmigrar legalmente a Chile.</p>
+                </div>
             </div>
-        </div>
+            <div class="instagramFeed">
+                <h3>&#x25bc; Vea lo último en nuestro Instagram.</h3>
+                <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+                </div>
+            </div>
     </main>
 
     <!-- footer se repite.-->
@@ -104,9 +112,16 @@
         </div>
     </footer>
 
-    <!-- Popper. Sólo activar si es necesario.
-    <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
-    -->
     <script src="./js/bootstrap.min.js"></script>
+    
+    <!-- Feed de Instagram cortesía de curator.io -->
+    <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function(){
+        var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+        i.src="https://cdn.curator.io/published/aa325402-0667-40e9-a41e-ef99d050522c.js";
+        e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+    </script>
 </body>
 </html>

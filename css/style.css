@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
 }
 
 /*  Encabezado: sistema de navegacion 
@@ -158,15 +159,15 @@
 /*  Grilla principal para llamar la atención    */
 .mainGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     margin: .5em;
     gap: .5em;
 }
 
 .highlightedGridItem {
-    grid-column: span 1;
+    grid-column: span 2;
     padding: 1em;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
 }
 
 .highlightedGridItem h3 {
@@ -177,27 +178,43 @@
 }
 
 /*  Presentación    */
-.presentationLayer {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+.presentationMainCard {
+    font-size: 1.2em;
+    background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
+    grid-column: span 6;
+    padding: 3em 0 3em 3em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    position: relative;
     width: 100%;
-    min-height: 20vh;
-    padding: 4em;
+    min-height: 30vh;
+}
+
+.presentationImageCard img {
+    opacity: .8;
+    width: 4:5;
+    height: 30vh;
+    z-index: 0;
 }
 
 .presentationMainTitle h3 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     letter-spacing: -0.05em;
-    margin-bottom: 0.2em;
+    z-index: 10;
+    width: 90%;
 }
 
-.presentationMainCard {
-    font-size: 1.2em;
+.presentationImageCard {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
+.presentationTextCard p {
+    width: calc(100% - 330px);
+    z-index: 999;
+}
 
 .mainText {
     margin: 1.5em;
@@ -220,36 +237,71 @@
     margin-bottom: 0.2em;
 }
 
-/*  Responsive  */
+.instagramFeed {
+    grid-column: span 6;
+    padding-top: 2em;
+}
+
+.instagramFeed h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    margin-bottom: 0.2em;
+}
+
+/*  Celulares y pantalla pequeña  */
 @media screen and (max-width: 768px) {
     .highlightedGridItem {
-        grid-column: span 3;
+        grid-column: span 6;
     }
 
     .floatingHeader h2 {
         font-size: 3.5em;
     }
 
+    .secondaryFloating h2 {
+        font-size: 2.5em;
+    }
+
     footer {
         padding-left: 0;
     }
 
-    .presentationLayer {
-        padding: 1.5em;
+    .presentationMainCard {
+        padding: 1.5em 0 0 1.5em;
+    }
+
+    .presentationImageCard img {
+        height: 20vh;
+        opacity: .4;
     }
 
     .presentationMainTitle {
         font-size: .8em;
     }
+
+    .presentationTextCard p {
+        width: 90%;
+    }
+
+    .mainParagraph h3 {
+        font-size: 2em;
+    }
 }
 
-/*  iMacs y pantallas con resoluciones horizontales absurdas    */
+/*  Tabletas    */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .floatingHeader h2 {
+        font-size: 4.5em;
+    }
+}
+
+/*  iMacs y pantallas con resoluciones horizontales absurdamente grandes    */
 @media screen and (min-width: 1650px) {
     main {
         width: 1650px;
     }
 }
-    
 
 /* Pie de página: hay que terminarlo */
 footer {
