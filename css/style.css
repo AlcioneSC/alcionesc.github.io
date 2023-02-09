@@ -117,7 +117,6 @@
 .spacer {
     position: relative;
     height: 80vh;
-    grid-column: span 6;
 }
 
 /*  Como secondaryHeader no necesita tener posición absoluta,
@@ -216,6 +215,7 @@
     z-index: 999;
 }
 
+
 .mainText {
     margin: 1.5em;
 }
@@ -255,6 +255,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     padding: 3em;
+    overflow: hidden;
 }
 
 .promotionGridItem h3 {
