@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Enlace a Bootstrap -->
+    <!-- El chancho se carga antes para dar la sensación de que la página es más rápida de lo que es. Ojo que cuando se termine 100% el sitio web se debe poner aquí también el CSS de la página -->
     <link rel="preload" href="./css/bootstrap.min.css" as="style">
     <link rel="preload" href="./js/bootstrap.min.js" as="script">
     <link rel="preload" href="https://cdn.curator.io/published/aa325402-0667-40e9-a41e-ef99d050522c.js" as="script">
+    <!-- <link rel="preload" href="./css/style.css" as="style"> -->
+    <!-- Enlace a Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Asistencia Migratoria Integral</title>
@@ -15,7 +17,7 @@
 <body>
     <!-- Empezamos.
         Este snippet es codigo que vamos a copiar de pagina en pagina.
-        Es la barra de navegacion
+        Es la barra de navegación Bootstrap
     -->
     <header>
         <nav class="naviGroup navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -60,13 +62,12 @@
             </div>
         </div>
 
+        <div class="mainGrid">
         <!-- position:absolute arranca los elementos de su flujo natural y la
              slideshow no funciona sin ese posicionamiento;
              este spacer es un workaround para que los elementos siguientes sigan
              ese flujo -->
-        <div class="spacer"></div>
-
-        <div class="mainGrid">
+            <div class="spacer"></div>
             <div class="highlightedGridItem">
                 <h3>Sin preocupaciones.</h3>
                 <p>Los cambios que ha tra&iacute;do la Ley 21.325 de Migraci&oacute;n y Extranjer&iacute;a han provocado que hoy quien desea <strong>migrar a Chile, mantener un estado migratorio legal o trabajar en Chile</strong>, no tenga, ni orientaciones, ni reglas claras.</p>
@@ -79,7 +80,7 @@
             </div>
             <div class="highlightedGridItem">
                 <h3>Sin contratiempos.</h3>
-                <p>No crea que, cuando le rechazan una solicitud de visa o de permanencia definitiva, la decisi&oacute;n tomada es justa o  correcta. El Servicio Nacional de Migraciones <strong>se equivoca, bastante</strong>, y por eso siempre es posible revertir un rechazo.</p>
+                <p>No crea que, cuando le rechazan una solicitud de visa o de permanencia definitiva, la decisi&oacute;n tomada es justa o correcta. El Servicio Nacional de Migraciones <strong>se equivoca, bastante</strong>, y por eso siempre es posible revertir un rechazo.</p>
                 <p>Usted necesita un equipo legal que tenga el <strong>conocimiento jur&iacute;dico necesario</strong> para revertir un rechazo de visa.</p>
             </div>
             <div class="presentationMainCard">
@@ -94,17 +95,46 @@
                     <p>Ha litigado en <strong>cientos de casos</strong> llevados adelante en favor de extranjeros migrantes en Chile, principalmente, de la comunidad venezolana. Ha colaborado en la reunificaci&oacute;n familiar de m&aacute;s de <strong>100 familias</strong>, quienes han podido inmigrar legalmente a Chile.</p>
                 </div>
             </div>
-            <div class="instagramFeed">
-                <h3>&#x25bc; Vea lo último en nuestro Instagram.</h3>
-                <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+            <div class="promotionGridItem">
+                <div style="grid-column: span 2;">
+                    <h3>Nuestros servicios.</h3>
+                </div>
+                <div>
+                    <h5>Aceleración de solicitud de visa.</h5>
+                    <p>Se pide a una Corte de Apelaciones una <strong>orden judicial</strong> para que se ordene al Servicio Nacional de Migraciones responder su solicitud en 60 d&iacute;as o menos. De no ser as&iacute;, se piden <strong>sanciones en contra del Servicio Nacional de Migraciones</strong>.</p>
+                    <p>El proceso completo dura <strong>cinco meses</strong>, entre que se comienza y que usted obtiene en su correo electr&oacute;nico la resoluci&oacute;n que le concede la visa o permanencia definitiva.</p>
+                    <p>Desde hace <strong>tres a&ntilde;os</strong> que venimos ofreciendo este servicio para combatir las excesivas demoras del Servicio Nacional de Migraciones, con excelentes resultados.</p>
+                </div>
+                <div>
+                    <h5>Asesor&iacute;a ante un rechazo de visa.</h5>
+                    <p>Se pide a una Corte de Apelaciones que deje sin efecto el rechazo de su solicitud de visa o permanencia definitiva, por haberse infringido el <strong>derecho a la igualdad ante la ley</strong>.</p>
+                    <p>Los rechazos de visa por inestabilidad econ&oacute;mica y las permanencias definitivas rechazadas incorrectamente por haber estado m&aacute;s de 180 d&iacute;as fuera del pa&iacute;s son dos ejemplos claros.</p>
+                </div>
+                <div>
+                    <h5>Reapertura de Visa de Responsabilidad Democr&aacute;tica.</h5>
+                    <p>La Visa de Responsabilidad Democr&aacute;tica serv&iacute;a para que un venezolano pudiera inmigrar a Chile de forma r&aacute;pida y expedita. Sin embargo m&aacute;s de 90.000 de estas solicitudes fueron cerradas de forma masiva el 11 de noviembre de 2020.</p>
+                    <p>Si este es su caso, podemos reabrir la solicitud cerrada ilegalmente para que usted pueda inmigrar a Chile, <strong>legalmente y por Maiquet&iacute;a</strong>, sin m&aacute;s requisito que <strong>exhibir un certificado de antecedentes penales limpio y un pasaporte vigente</strong>.</p>
+                </div>
+                <div>
+                    <h5>Asesor&iacute;a para solicitar visa.</h5>
+                    <p>La Ley 21.325 de Migraci&oacute;n y Extranjer&iacute;a lo cambi&oacute; todo en cuanto a la solicitud de visas para trabajar, aun para profesionales.</p>
+                    <p>Si usted es un profesional o inversionista, contamos con las herramientas para orientarle y ayudarle a solicitar la <em>visa para ejercer actividades econ&oacute;micas l&iacute;citas en Chile,</em> o <strong>hacer la solicitud por usted</strong>, si lo desea.</p>
                 </div>
             </div>
+            <div class="instagramFeed">
+                <h3>&#x25bc; Vea lo último en nuestro Instagram.</h3>
+                <div id="curator-feed-default-feed-layout">
+                    <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- footer se repite.-->
     <footer class="bg-dark bg-gradient">
         <div>
-            <p>Diego Portales 33, oficina 214,<br>
+            <p>&phone; +56 9 9047 6172</p>
+            <p>Diego Portales 33, oficina 214.<br>
             Edificio Milano,<br>
             Re&ntilde;aca, Vi&ntilde;a del Mar.</p>
             <hr>
