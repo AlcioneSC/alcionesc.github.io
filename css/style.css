@@ -285,6 +285,7 @@
 
 #accelSquare div {
     padding: 1em;
+    -webkit-backdrop-filter: blur(10px) brightness(50%);
     backdrop-filter: blur(10px) brightness(50%);
 }
 
@@ -298,6 +299,7 @@
 
 #rejectionSquare div {
     padding: 1em;
+    -webkit-backdrop-filter: blur(10px) brightness(50%);
     backdrop-filter: blur(10px) brightness(50%);
 }
 
@@ -311,6 +313,7 @@
 
 #reopeningSquare div {
     padding: 1em;
+    -webkit-backdrop-filter: blur(10px) brightness(50%);
     backdrop-filter: blur(10px) brightness(50%);
 }
 
@@ -324,6 +327,7 @@
 
 #assistanceSquare div {
     padding: 1em;
+    -webkit-backdrop-filter: blur(10px) brightness(50%);
     backdrop-filter: blur(10px) brightness(50%);
 }
 
