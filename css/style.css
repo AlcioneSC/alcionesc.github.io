@@ -189,6 +189,12 @@
     min-height: 30vh;
 }
 
+.presentationImageCard {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .presentationImageCard img {
     opacity: .8;
     width: 256px;
@@ -204,19 +210,9 @@
     width: 90%;
 }
 
-.presentationImageCard {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 .presentationTextCard p {
     width: calc(100% - 330px);
     z-index: 999;
-}
-
-.mainText {
-    margin: 1.5em;
 }
 
 .mainParagraph {
