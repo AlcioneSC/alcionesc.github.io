@@ -1,4 +1,5 @@
-@import "./css/variable/_vars.scss";
+@import "./css/imports/_vars.scss";
+@import "./css/imports/_shared.scss";
 
 * {
     margin: 0;
@@ -319,7 +320,6 @@ footer {
 
 // Media query
 @media screen and (max-width: 768px) {
-
     header {
         .secondaryHeader {
             .secondaryFloating {
@@ -373,17 +373,20 @@ footer {
                 }
             }    
         }
+        .mainParagraph h3 {
+            font-size: 2em;
+        }
      }
-
-    .mainParagraph h3 {
-        font-size: 2em;
-    }
 }
 
 //  Tabletas    
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .floatingHeader h2 {
-        font-size: 4.5em;
+    main {
+        .imageStack {
+            .floatingHeader h2 {
+                font-size: 4.5em;
+            }
+        }
     }
 }
 
