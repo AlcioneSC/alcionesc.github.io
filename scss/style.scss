@@ -1,11 +1,12 @@
-@import "./css/imports/_vars.scss";
-@import "./css/imports/_shared.scss";
+@import "./imports/_vars.scss";
+@import "./imports/_shared.scss";
+@import 'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', Helvetica, Arial, sans-serif;
     letter-spacing: -0.02em;
 }
 
