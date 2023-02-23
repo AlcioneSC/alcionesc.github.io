@@ -1,0 +1,77 @@
+// Celulares
+@media screen and (max-width: 768px) {
+    header {
+        .secondaryHeader {
+            .secondaryFloating {
+                h1 {
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+    main {
+        .imageStack {
+            .floatingHeader {
+                h1 {
+                    font-size: 3.5em;
+                }
+            }
+        }
+        .mainGrid {
+            .mainParagraph h2 {
+                font-size: 2em;
+            }
+            .presentationMainCard {
+                padding: 1em 0 0 1em;
+            }
+            .highlightedGridItem {
+                grid-column: span 6;
+            }
+            .presentationMainCard {
+                .presentationImageCard {
+                    img {
+                        width: 192px;
+                        height: 240px;
+                        opacity: .4;
+                    }
+                }
+                .presentationTextCard {
+                    p {
+                        width: 90%;
+                        font-size: 0.8em;
+                    }
+                    .presentationMainTitle {
+                        font-size: .8em;
+                    }
+                }
+            }
+            .promotionGridItem {
+                padding: 2em 1em 1em 1em;
+                div {
+                    grid-column: span 2;
+                }
+                h2 {
+                    font-size: 2.5em;
+                }
+            }    
+        }
+     }
+}
+
+//  Tabletas    
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        .imageStack {
+            .floatingHeader h1 {
+                font-size: 4.5em;
+            }
+        }
+    }
+}
+
+// iMacs y pantallas con resoluciones horizontales absurdamente grandes
+@media screen and (min-width: 1650px) {
+    main {
+        width: 1650px;
+    }
+}
