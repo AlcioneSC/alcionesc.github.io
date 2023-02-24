@@ -2,87 +2,115 @@
 // Cambios en el sitio web gatillados por cambios en las condiciones de visualizacion
 
 // Celulares
-@media screen and (max-width: 768px) {
-    header {
-        .secondaryHeader {
-            .secondaryFloating {
-                h1 {
-                    font-size: $size3;
+@media screen and (max-width: 767px) {
+    body {
+        h1 {
+            font-size: $size3;
+            font-weight: bold;
+            letter-spacing: -0.07em;
+        }
+        h2 {
+            font-size: $size4;
+            font-weight: bold;
+            letter-spacing: -0.06em;
+        }
+        h3 {
+            font-size: $size5;
+            font-weight: bold;
+            letter-spacing: -0.05em;
+        }
+        p {
+            font-size: $size7;
+        }
+        ul {
+            font-size: $size7;
+        }
+        header {
+            .secondaryHeader {
+                height: 50vh;
+                .secondaryFloating {
+                    bottom: $mobMargin;
+                    left: $mobMargin;
+                }
+            }
+        }
+        main {
+            .imageStack {
+                .floatingHeader {
+                    bottom: $mobMargin;
+                    left: $mobMargin;
+                    h1 {
+                        font-size: $size3;
+                    }
+                }
+            }
+            .mainGrid {
+                .highlightedGridItem {
+                    padding: $mobMargin;
+                    p {
+                        padding-left: $mobMargin;
+                    }
+                }
+                .mainParagraph {
+                    p {
+                        padding: 0 $mobMargin 0 20px;
+                    }
+                    h2 {
+                        padding: $mobMargin;
+                    }
+                }
+                .presentationMainCard {
+                    min-height: 360px;
+                    .presentationImageCard {
+                        img {
+                            width: 240px;
+                            height: auto;
+                            opacity: 0.3;
+                        }
+                    }
+                    .presentationTextCard {
+                        bottom: $mobMargin;
+                        left: $mobMargin;
+                        p {
+                            width: 90%;
+                        }
+                    }
+                }
+                .promotionGridItem {
+                    padding: 36px 0 0 0;
+                    gap: 5px;
+                    div {
+                        grid-column: span 2;
+                    }
+                    h2 {
+                        padding-left: $mobMargin;
+                    }
+                    #accelSquare, #rejectionSquare, #reopeningSquare, #assistanceSquare {
+                        min-height: 280px;
+                    }
+                }
+                .instagramFeed {
+                    padding: 36px 0 0 0;
+                    h2 {
+                        padding: 0 $mobMargin 0 $mobMargin;
+                    }
+                }
+            }
+            .mainGrid {
+                .mainForm {
+                    padding: $mobMargin;
                 }
             }
         }
     }
-    main {
-        .imageStack {
-            height: 60vh;
-            .floatingHeader {
-                h1 {
-                    font-size: $size2;
-                }
-            }
-        }
-        .spacer {
-            height: 60vh;
-        }
-        .mainGrid {
-            .mainParagraph h2 {
-                font-size: $size5;
-            }
-            .presentationMainCard {
-                padding: $mobMargin 0 0 $mobMargin;
-            }
-            .highlightedGridItem {
-                font-size: 0.8em;
-            }
-            .presentationMainCard {
-                .presentationImageCard {
-                    img {
-                        width: 240px;
-                        height: auto;
-                        opacity: 0.3;
-                    }
-                }
-                .presentationTextCard {
-                    p {
-                        width: 90%;
-                        font-size: 0.8em;
-                    }
-                    .presentationMainTitle {
-                        font-size: .8em;
-                    }
-                }
-            }
-            .promotionGridItem {
-                padding: 36px 0 0 0;
-                gap: 5px;
-                div {
-                    grid-column: span 2;
-                }
-                h2 {
-                    padding-left: 32px;
-                    font-size: 2.5em;
-                }
-            }
-            .instagramFeed {
-                padding: 36px 0 0 0;
-                h2 {
-                    padding: 0 36px 0 36px;
-                }
-            }
-        }
-     }
 }
 
 //  Tabletas    
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     main {
-        .imageStack {
-            .floatingHeader h1 {
-                font-size: $size2;
-            }
-        }
         .mainGrid {
             .presentationMainCard {
+                min-height: 360px;
                 .presentationImageCard {
                     img {
                         width: 240px;
@@ -96,10 +124,6 @@
                 .presentationTextCard {
                     p {
                         width: 90%;
-                        font-size: 1em;
-                    }
-                    .presentationMainTitle {
-                        font-size: .8em;
                     }
                 }
             }
