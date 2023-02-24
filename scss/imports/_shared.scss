@@ -1,4 +1,16 @@
 // Estilos compartidos entre páginas
+@mixin mainBlur {
+    -webkit-backdrop-filter: blur(10px) brightness(70%);
+    backdrop-filter: blur(10px) brightness(70%);
+}
+
+@mixin backgroundGen {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-attachment: local;
+}
+
 header {
     .navbar {
         opacity: 0.85;
@@ -31,7 +43,7 @@ header {
             bottom: 30px;
             left: 30px;
             h1 {
-                font-size: 4em;
+                font-size: $size2;
                 line-height: 1em;
                 font-weight: bold;
                 color: white;
@@ -44,40 +56,9 @@ header {
 
 main {
     .mainGrid {
-        .mainParagraph {
-            margin-top: 1.2em;
-            margin-bottom: 1.5em;
-            grid-column: span 5;
-            padding-right: 2em;
-            h2 {
-                font-size: 2.5em;
-                font-weight: bold;
-                letter-spacing: -0.05em;
-                margin-bottom: 0.2em;
-            }
-            p {
-                font-size: 1em;
-                margin-bottom: 0.2em;
-            }
-        }
-        .square {
-            background-color: blue;
-            width: 22px;
-            height: 22px;
-            position: relative;
-            right: 2px;
-            top: 31px;
-        }
-        .newsTab {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            justify-content: right;
-        }
-        .mainForm {
-            grid-column: span 6;
-            padding: 3em;
-        }
+        display: grid;
+        grid-template-columns: 1fr repeat(5, 2fr);
+        margin: 0;
     }
 }
 

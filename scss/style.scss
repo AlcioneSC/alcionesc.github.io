@@ -1,6 +1,23 @@
-@import "./imports/_vars.scss";
-@import "./imports/_global.scss";
-@import "./imports/_shared.scss";
-@import "./imports/_landing.scss";
-@import "./imports/_media.scss";
+// Estructura principal.
+// El archivo SASS está partido en varias secciones.
+// _vars.scss: Contiene las variables declaradas que serán usadas en el proyecto.
+// _global.scss: Contiene el reset global para todo el proyecto.
+// _shared.scss: Contiene clases que serán utilizadas en todas las páginas
+// _media.scss: Contiene las media queries para todo el proyecto.
+
+// Archivos dependientes de página:
+// _landing.scss: Contiene los estilos para la página principal.
+
+// Advertencia: en este proyecto el generador SASS fue configurado para emitir un solo
+// archivo CSS minificado. El verdadero código fuente es SASS.
+
+@import "./imports/vars";
+@import "./imports/global";
+@import "./imports/shared";
+@import "./imports/landing";
+@import "./imports/news";
+@import "./imports/visa";
+@import "./imports/services";
+@import "./imports/contact";
+@import "./imports/media";
 // @import 'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap';

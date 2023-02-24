@@ -1,22 +1,22 @@
+// PAGINA PRINCIPAL
+// Primera página y estructura
+
 main {
-    // Primera página y estructura
     .imageStack {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         position: absolute;
         .slideShow {
             li {
                 list-style: none;
                 span {
+                    @include backgroundGen;
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     top: 0;
                     left: 0;
                     color: transparent;
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    background-repeat: none;
                     opacity: 0;
                     animation: imageAnimation 30s ease-in-out infinite;
                 }
@@ -62,8 +62,8 @@ main {
             z-index: 20;
             width: 80%;
             position: absolute;
-            bottom: 30px;
-            left: 30px;
+            bottom: $margin;
+            left: $margin;
             h1 {
                 font-size: 6em;
                 font-weight: bold;
@@ -76,49 +76,54 @@ main {
     }
     .spacer {
         position: relative;
-        height: 100vh;
+        height: 80vh;
     }
     .mainGrid {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        margin: .5em;
-        gap: .5em;
         .highlightedGridItem {
-            grid-column: span 2;
-            padding: 1em;
-            background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
+            grid-column: span 7;
+            padding: $margin;
+            color: white;
             h2 {
-                font-size: 2em;
+                font-size: 3em;
                 font-weight: bold;
                 letter-spacing: -0.05em;
                 margin-bottom: 0.2em;
             }
+            p {
+                padding-left: 42px;
+                font-size: 1.1em;
+            }
         }
         .presentationMainCard {
             font-size: 1.2em;
+            grid-column: span 7;
+            padding: $margin 0 $margin $margin;
             background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
-            grid-column: span 6;
-            padding: 3em 0 3em 3em;
             display: flex;
             flex-direction: row;
             position: relative;
             width: 100%;
-            min-height: 30vh;
+            min-height: 40vh;
             .presentationImageCard {
                 position: absolute;
-                bottom: 0;
-                right: 0;
+                right: 0px;
+                bottom: 0px;
                 img {
                     opacity: .8;
-                    width: 256px;
-                    height: 320px;
-                    z-index: 0;
+                    width: 300px;
+                    height: auto;
                 }
             }
             .presentationTextCard {
+                position: absolute;
+                bottom: $margin;
+                left: $margin;
+                color: white;
+                text-shadow: 2px 2px 10px black;
                 p {
                     width: calc(100% - 330px);
-                    z-index: 999;
+                    z-index: 99;
+                    @include mainBlur();
                 }
                 .presentationMainTitle {
                     h2 {
@@ -132,11 +137,11 @@ main {
             }
         }
         .promotionGridItem {
-            grid-column: span 6;
+            grid-column: span 7;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1em;
-            padding: 4em 3em 3em 3em;
+            gap: 10px;
+            padding: $size2 $margin $margin $margin;
             overflow: hidden;
             position: relative;
             align-items: normal;
@@ -154,58 +159,66 @@ main {
             }
             #accelSquare {
                 background-image: url("../img/visa-tiempo.jpg");
-                background-position: center;
-                background-size: cover;
+                @include backgroundGen();
+                min-height: 400px;
                 color: white;
                 padding: 1em;
+                position: relative;
                 div {
+                    position: absolute;
+                    bottom: 0;
                     padding: 1em;
-                    -webkit-backdrop-filter: blur(10px) brightness(50%);
-                    backdrop-filter: blur(10px) brightness(50%);
+                    @include mainBlur();
                 }
             }
             #rejectionSquare {
                 background-image: url("../img/visa-rechazo.jpg");
-                background-position: center;
-                background-size: cover;
+                @include backgroundGen();
+                min-height: 400px;
                 color: white;
                 padding: 1em;
+                position: relative;
                 div {
+                    position: absolute;
+                    bottom: 0;
                     padding: 1em;
-                    -webkit-backdrop-filter: blur(10px) brightness(50%);
-                    backdrop-filter: blur(10px) brightness(50%);
+                    @include mainBlur();
                 }
             }
             #reopeningSquare {
                 background-image: url("../img/visa-reapertura.jpg");
-                background-position: center;
-                background-size: cover;
+                @include backgroundGen();
                 color: white;
                 padding: 1em;
+                min-height: 400px;
+                position: relative;
                 div {
+                    position: absolute;
+                    bottom: 0;
                     padding: 1em;
-                    -webkit-backdrop-filter: blur(10px) brightness(50%);
-                    backdrop-filter: blur(10px) brightness(50%);
+                    @include mainBlur();
                 }
             }
             #assistanceSquare {
                 background-image: url("../img/visa-asesoria.jpg");
-                background-position: center;
-                background-size: cover;
+                @include backgroundGen();
+                min-height: 400px;
                 color: white;
                 padding: 1em;
+                position: relative;
                 div {
+                    position: absolute;
+                    bottom: 0;
                     padding: 1em;
-                    -webkit-backdrop-filter: blur(10px) brightness(50%);
-                    backdrop-filter: blur(10px) brightness(50%);
+                    @include mainBlur();
                 }
             }
         }
         .instagramFeed {
             grid-column: span 6;
-            padding-top: 2em;
+            padding: 0 $margin 0 $margin;
             h2 {
-                font-size: 2.5em;
+                font-size: 3em;
                 font-weight: bold;
                 letter-spacing: -0.05em;
                 margin-bottom: 0.2em;

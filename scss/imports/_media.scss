@@ -1,38 +1,45 @@
+// MEDIA QUERIES
+// Cambios en el sitio web gatillados por cambios en las condiciones de visualizacion
+
 // Celulares
 @media screen and (max-width: 768px) {
     header {
         .secondaryHeader {
             .secondaryFloating {
                 h1 {
-                    font-size: 2.5em;
+                    font-size: $size3;
                 }
             }
         }
     }
     main {
         .imageStack {
+            height: 60vh;
             .floatingHeader {
                 h1 {
-                    font-size: 3.5em;
+                    font-size: $size2;
                 }
             }
         }
+        .spacer {
+            height: 60vh;
+        }
         .mainGrid {
             .mainParagraph h2 {
-                font-size: 2em;
+                font-size: $size5;
             }
             .presentationMainCard {
-                padding: 1em 0 0 1em;
+                padding: $mobMargin 0 0 $mobMargin;
             }
             .highlightedGridItem {
-                grid-column: span 6;
+                font-size: 0.8em;
             }
             .presentationMainCard {
                 .presentationImageCard {
                     img {
-                        width: 192px;
-                        height: 240px;
-                        opacity: .4;
+                        width: 240px;
+                        height: auto;
+                        opacity: 0.3;
                     }
                 }
                 .presentationTextCard {
@@ -46,14 +53,22 @@
                 }
             }
             .promotionGridItem {
-                padding: 2em 1em 1em 1em;
+                padding: 36px 0 0 0;
+                gap: 5px;
                 div {
                     grid-column: span 2;
                 }
                 h2 {
+                    padding-left: 32px;
                     font-size: 2.5em;
                 }
-            }    
+            }
+            .instagramFeed {
+                padding: 36px 0 0 0;
+                h2 {
+                    padding: 0 36px 0 36px;
+                }
+            }
         }
      }
 }
@@ -63,10 +78,34 @@
     main {
         .imageStack {
             .floatingHeader h1 {
-                font-size: 4.5em;
+                font-size: $size2;
+            }
+        }
+        .mainGrid {
+            .presentationMainCard {
+                .presentationImageCard {
+                    img {
+                        width: 240px;
+                        height: auto;
+                        opacity: 0.3;
+                    }
+                }
+                .highlightedGridItem {
+                    font-size: 1em;
+                }
+                .presentationTextCard {
+                    p {
+                        width: 90%;
+                        font-size: 1em;
+                    }
+                    .presentationMainTitle {
+                        font-size: .8em;
+                    }
+                }
             }
         }
     }
+
 }
 
 // iMacs y pantallas con resoluciones horizontales absurdamente grandes
