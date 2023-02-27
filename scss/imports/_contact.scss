@@ -2,7 +2,7 @@ main {
     .mainGrid {
         .mainForm {
             grid-column: span 6;
-            padding: 3em;
+            padding: $margin;
         }
     }
 }
