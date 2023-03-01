@@ -9,20 +9,21 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    font-kerning: normal;
     letter-spacing: -0.02em;
     h1 {
+        font-family: 'DIN Alternate', Helvetica, Arial, sans-serif;
         font-size: $size2;
-        font-weight: bold;
-        letter-spacing: -0.07em;
+        letter-spacing: -0.05em;
     }
     h2 {
+        font-family: 'DIN Alternate', Helvetica, Arial, sans-serif;
         font-size: $size3;
-        font-weight: bold;
-        letter-spacing: -0.06em;
+        letter-spacing: -0.04em;
     }
     h3 {
+        font-family: 'DIN Alternate', Helvetica, Arial, sans-serif;
         font-size: $size4;
-        font-weight: bold;
-        letter-spacing: -0.05em;
+        letter-spacing: -0.03em;
     }
 }

@@ -8,10 +8,8 @@ main {
                 margin-bottom: 0.4em;
             }
             h2 {
-                padding: 48px $margin 0 $margin;
-                background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
-                @include backgroundGen();
-                color: black;
+                padding: 24px $margin 0 $margin;
+                color: white;
             }
             ul {
                 padding: 0 $margin 0 60px;

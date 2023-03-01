@@ -63,12 +63,14 @@ main {
             width: 80%;
             position: absolute;
             bottom: $margin;
-            left: $margin;
+            left: 0;
             h1 {
                 font-size: $size1;
+                padding-left: $margin;
                 color: white;
                 text-shadow: 2px 2px 10px black;
                 line-height: 1.1em;
+                @include mainBlur();
             }
         }
     }
@@ -78,19 +80,15 @@ main {
     }
     .mainGrid {
         .highlightedGridItem {
-            grid-column: span 6;
-            padding: $margin;
+            grid-column: span 3;
+            padding: 26px $margin 26px $margin;
             color: white;
-            h2 {
-                margin-bottom: 0.2em;
-            }
         }
         .presentationMainCard {
-            grid-column: span 6;
+            grid-column: span 3;
             display: flex;
             flex-direction: row;
             position: relative;
-            padding: $margin;
             background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
             width: 100%;
             min-height: 360px;
@@ -106,12 +104,12 @@ main {
             }
             .presentationTextCard {
                 position: absolute;
-                bottom: $margin;
+                top: 26px;
                 left: $margin;
                 color: white;
                 text-shadow: 2px 2px 10px black;
                 p {
-                    width: calc(100% - 300px);
+                    width: calc(100% - 17vw);
                     z-index: 99;
                     @include mainBlur();
                 }
@@ -135,7 +133,7 @@ main {
                 line-height: 0.6em;
             }
             h3 {
-                text-shadow: 2px 2px 2px black;
+                text-shadow: 2px 2px 4px black;
             }
             #accelSquare, #rejectionSquare, #reopeningSquare, #assistanceSquare{
                 @include backgroundGen();
@@ -165,10 +163,7 @@ main {
         }
         .instagramFeed {
             grid-column: span 6;
-            padding: 0 $margin 0 0;
-            h2 {
-                margin-bottom: 0.2em;
-            }
+            padding-right: $margin;
         }
     }
 }

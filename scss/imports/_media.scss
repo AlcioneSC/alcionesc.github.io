@@ -6,18 +6,12 @@
     body {
         h1 {
             font-size: $size3;
-            font-weight: bold;
-            letter-spacing: -0.07em;
         }
         h2 {
             font-size: $size4;
-            font-weight: bold;
-            letter-spacing: -0.06em;
         }
         h3 {
             font-size: $size5;
-            font-weight: bold;
-            letter-spacing: -0.05em;
         }
         p {
             font-size: $size7;
@@ -45,22 +39,38 @@
                 }
             }
             .mainGrid {
+                grid-template-columns: 40px repeat(6, 2fr);
+                .socialSpan {
+                    .socialNetwork {
+                        width: 40px;
+                        img {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
                 .highlightedGridItem {
                     padding: $mobMargin;
+                    grid-column: span 6;
                     p {
-                        padding-left: $mobMargin;
+                        width: 95%;
+                        padding-left: 0;
                     }
                 }
                 .mainParagraph {
                     p {
-                        padding: 0 $mobMargin 0 20px;
+                        padding: 0 $mobMargin 0 $mobMargin;
                     }
                     h2 {
+                        padding: $mobMargin;
+                    }
+                    ul {
                         padding: $mobMargin;
                     }
                 }
                 .presentationMainCard {
                     min-height: 320px;
+                    grid-column: span 6;
                     .presentationImageCard {
                         img {
                             width: 217px;
@@ -72,7 +82,7 @@
                         bottom: $mobMargin;
                         left: $mobMargin;
                         p {
-                            width: 90%;
+                            width: 95%;
                         }
                     }
                 }
@@ -95,8 +105,6 @@
                         padding: 0 $mobMargin 0 $mobMargin;
                     }
                 }
-            }
-            .mainGrid {
                 .mainForm {
                     padding: $mobMargin;
                 }
@@ -106,11 +114,15 @@
 }
 
 //  Tabletas    
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     main {
         .mainGrid {
+            .highlightedGridItem {
+                grid-column: span 6;
+            }
             .presentationMainCard {
-                min-height: 360px;
+                grid-column: span 6;
+                min-height: 420px;
                 .presentationImageCard {
                     img {
                         width: 240px;
@@ -118,12 +130,10 @@
                         opacity: 0.3;
                     }
                 }
-                .highlightedGridItem {
-                    font-size: 1em;
-                }
                 .presentationTextCard {
+
                     p {
-                        width: 90%;
+                        width: calc(100% - 20vw);
                     }
                 }
             }
@@ -136,5 +146,14 @@
 @media screen and (min-width: 1650px) {
     main {
         width: 1650px;
+        .mainGrid {
+            .promotionGridItem {
+                padding: $margin 0 $margin 0;
+            }
+            .instagramFeed {
+                padding: 0;
+            }
+        }
     }
+
 }
