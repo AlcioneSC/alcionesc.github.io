@@ -1,0 +1,26 @@
+main {
+    .mainGrid {
+        .tabSelectorS {
+            @include inputGen(3);
+            @extend .tabSelector;
+            #servTab1,
+            #servTab2,
+            #servTab3 {
+                &:checked {
+                    + label {
+                        color: white;
+                        background-image: none;
+                        background-color: $bs-dark;
+                    }
+                }
+            }
+            #servTab1:checked ~ .tabArticleWrapper > #servItem1,
+            #servTab2:checked ~ .tabArticleWrapper > #servItem2,
+            #servTab3:checked ~ .tabArticleWrapper > #servItem3 {
+                display: block;
+                position: relative;
+                top: 0px;
+            }
+        }
+    }
+}

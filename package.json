@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/AlcioneSC/alcionesc.github.io#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.21"
   },
   "dependencies": {
     "sass": "^1.58.3"

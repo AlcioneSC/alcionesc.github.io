@@ -1,7 +1,26 @@
 main {
     .mainGrid {
-        .heroContainer {
-            grid-column: span 6;
+        .tabSelectorV {
+            @include inputGen(3);
+            @extend .tabSelector;
+            #visaTab1,
+            #visaTab2,
+            #visaTab3 {
+                &:checked {
+                    + label {
+                        color: white;
+                        background-image: none;
+                        background-color: $bs-dark;
+                    }
+                }
+            }
+            #visaTab1:checked ~ .tabArticleWrapper > #visaItem1,
+            #visaTab2:checked ~ .tabArticleWrapper > #visaItem2,
+            #visaTab3:checked ~ .tabArticleWrapper > #visaItem3 {
+                display: block;
+                position: relative;
+                top: 0px;
+            }
         }
     }
 }
