@@ -1,14 +1,18 @@
 // VARIABLES
-// Valores disponibles a lo largo de todo el sitio
-
+// Márgenes disponibles a lo largo de todo el sitio
 $margin: 36px;
 $mobMargin: 10px;
+$gradientAlert: radial-gradient( circle 674px at 18.3% 77%,  rgba(139,186,244,1) 3.4%, rgba(15,51,92,1) 56.6% );
+$gradientPlain: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
 
 // SET DE TAMAÑOS
-$size1: 72pt;
-$size2: 48pt;
+$size1: 80pt;
+$size2: 52pt;
 $size3: 36pt;
 $size4: 20pt;
 $size5: 14pt;
 $size6: 12pt;
 $size7: 10pt;
+
+// Colores útiles
+$bs-dark: #222529;

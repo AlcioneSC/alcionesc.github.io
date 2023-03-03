@@ -1,18 +1,64 @@
 main {
     .mainGrid {
-        .mainParagraph {
-            margin-bottom: 1.5em;
-            grid-column: span 6;
-            p {
-                padding: 0 $margin 0 $margin;
-                margin-bottom: 0.4em;
+        .tabSelector {
+            @include inputGen(4);
+            input[type="radio"] {
+                display: none;
             }
-            h2 {
-                padding: 24px $margin 0 $margin;
-                color: white;
+            > label {
+                position: relative;
+                overflow: hidden;
+                height: 320px;
+                background-image: $gradientPlain;
+                .newsHeader {
+                    position: absolute;
+                    padding: 12px 12px 0 12px;
+                    bottom: 0;
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
             }
-            ul {
-                padding: 0 $margin 0 60px;
+            .tabArticleWrapper {
+                grid-column: span 4;
+                background-image: $gradientPlain;
+                margin-bottom: 12px;
+                .mainParagraph {
+                    position: absolute;
+                    display: none;
+                    margin-bottom: 1.5em;
+                    p {
+                        padding: 0 $margin 0 $margin;
+                        margin-bottom: 0.4em;
+                    }
+                    h2 {
+                        padding: 24px $margin 0 $margin;
+                        color: white;
+                    }
+                    ul {
+                        padding: 0 $margin 0 60px;
+                    }
+                }    
+            }
+            #newsTab1,
+            #newsTab2,
+            #newsTab3,
+            #newsTab4 {
+                &:checked {
+                    + label {
+                        color: white;
+                        background-image: none;
+                        background-color: $bs-dark;
+                    }
+                }
+            }
+            #newsTab1:checked ~ .tabArticleWrapper > #newsItem1,
+            #newsTab2:checked ~ .tabArticleWrapper > #newsItem2,
+            #newsTab3:checked ~ .tabArticleWrapper > #newsItem3,
+            #newsTab4:checked ~ .tabArticleWrapper > #newsItem4 {
+                display: block;
+                position: relative;
+                top: 0px;
             }
         }
     }

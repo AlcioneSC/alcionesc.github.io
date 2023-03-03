@@ -81,6 +81,7 @@ main {
     .mainGrid {
         .highlightedGridItem {
             grid-column: span 3;
+            background-color: $bs-dark;
             padding: 26px $margin 26px $margin;
             color: white;
         }
@@ -89,7 +90,7 @@ main {
             display: flex;
             flex-direction: row;
             position: relative;
-            background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
+            background-image: $gradientPlain;
             width: 100%;
             min-height: 360px;
             .presentationImageCard {
@@ -122,13 +123,8 @@ main {
             }
         }
         .promotionGridItem {
-            grid-column: span 6;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            @include inputGen(2);
             padding: $margin $margin $margin 0;
-            position: relative;
-            align-items: normal;
             h2 {
                 line-height: 0.6em;
             }

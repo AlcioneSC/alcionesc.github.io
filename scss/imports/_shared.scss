@@ -1,24 +1,33 @@
 // Estilos compartidos entre páginas
-@mixin mainBlur {
+@mixin mainBlur() {
     -webkit-backdrop-filter: blur(10px) brightness(70%);
     backdrop-filter: blur(10px) brightness(70%);
 }
 
-@mixin backgroundGen {
+@mixin backgroundGen() {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
     background-attachment: local;
 }
 
+@mixin inputGen($columns) {
+    grid-column: span 6;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 10px;
+}
+
 header {
     .navbar {
         opacity: 0.9;
+        padding-right: 6px;
     }
     .nav-item {
+        font-size: $size5;
         font-family: 'DIN Alternate', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
-        font-weight: bold;
     }
     .naviLogo {
         img {
@@ -75,6 +84,14 @@ main {
                     margin-bottom: 16px;
                 }    
             }
+        }
+        .headerAlert {
+            grid-column: span 6;
+            padding: 12px 20px 0 20px;
+            background-image: $gradientAlert;
+            color: white;
+            margin-bottom: 12px;
+            text-shadow: 2px 2px 4px black;
         }
     }
 }
