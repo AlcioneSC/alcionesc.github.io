@@ -32,17 +32,18 @@
             .imageStack {
                 .floatingHeader {
                     bottom: $mobMargin;
-                    left: $mobMargin;
                     h1 {
                         font-size: $size3;
+                        padding-left: $mobMargin;
                     }
                 }
             }
             .mainGrid {
-                grid-template-columns: 40px repeat(6, 2fr);
+                grid-template-columns: 32px repeat(6, 2fr);
+                gap: 5px;
                 .socialSpan {
                     .socialNetwork {
-                        width: 40px;
+                        width: 36px;
                         img {
                             width: 32px;
                             height: 32px;
@@ -57,20 +58,10 @@
                         padding-left: 0;
                     }
                 }
-                .mainParagraph {
-                    p {
-                        padding: 0 $mobMargin 0 $mobMargin;
-                    }
-                    h2 {
-                        padding: $mobMargin;
-                    }
-                    ul {
-                        padding: $mobMargin;
-                    }
-                }
                 .presentationMainCard {
                     min-height: 320px;
                     grid-column: span 6;
+                    position: relative;
                     .presentationImageCard {
                         img {
                             width: 217px;
@@ -79,34 +70,54 @@
                         }
                     }
                     .presentationTextCard {
-                        bottom: $mobMargin;
                         left: $mobMargin;
+                        top: 0;
+                        align-self: flex-end;
                         p {
-                            width: 95%;
+                            width: 90%;
                         }
                     }
                 }
-                .promotionGridItem {
-                    padding: 36px 0 0 0;
-                    gap: 5px;
+                .headerMain {
+                    margin-top: $vmargin;
+                }
+                .mSquare {
+                    grid-column: span 6;
+                    min-height: 280px;
                     div {
-                        grid-column: span 2;
-                    }
-                    h2 {
-                        padding-left: $mobMargin;
-                    }
-                    #accelSquare, #rejectionSquare, #reopeningSquare, #assistanceSquare {
-                        min-height: 280px;
+                        padding: $mobMargin;
                     }
                 }
-                .instagramFeed {
-                    padding: 36px 0 0 0;
-                    h2 {
-                        padding: 0 $mobMargin 0 $mobMargin;
-                    }
+                .headerAlert {
+                    grid-column: span 6;
                 }
                 .mainForm {
                     padding: $mobMargin;
+                }
+                .tabSelector {
+                    .tabArticleWrapper {
+                        .mainParagraph {
+                            p {
+                                padding: 0 $mobMargin 0 $mobMargin;
+                            }
+                            h2 {
+                                padding: $mobMargin $mobMargin 0 $mobMargin;
+                            }
+                            h3 {
+                                padding: $mobMargin 0 0 $mobMargin;
+                            }
+                            ul {
+                                padding: 0 $mobMargin 0 $margin;
+                            }
+                            .imageCarrier {
+                                flex-direction: column;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -115,45 +126,49 @@
 
 //  Tabletas    
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    main {
-        .mainGrid {
-            .highlightedGridItem {
-                grid-column: span 6;
-            }
-            .presentationMainCard {
-                grid-column: span 6;
-                min-height: 420px;
-                .presentationImageCard {
-                    img {
-                        width: 240px;
-                        height: auto;
-                        opacity: 0.3;
+    body {
+        main {
+            .imageStack {
+                .floatingHeader {
+                    h1 {
+                        font-size: $size2;
                     }
                 }
-                .presentationTextCard {
-
-                    p {
-                        width: calc(100% - 20vw);
+            }
+            .mainGrid {
+                .mSquare {
+                    div {
+                        padding: $mobMargin;
+                    }
+                }
+                .highlightedGridItem {
+                    grid-column: span 6;
+                }
+                .presentationMainCard {
+                    grid-column: span 6;
+                    .presentationImageCard {
+                        img {
+                            width: 240px;
+                            height: auto;
+                            opacity: 0.3;
+                        }
+                    }
+                    .presentationTextCard {
+                        p {
+                            width: calc(100% - 20vw);
+                        }
                     }
                 }
             }
         }
     }
-
 }
 
 // iMacs y pantallas con resoluciones horizontales absurdamente grandes
 @media screen and (min-width: 1650px) {
-    main {
-        width: 1650px;
-        .mainGrid {
-            .promotionGridItem {
-                padding: $margin 0 $margin 0;
-            }
-            .instagramFeed {
-                padding: 0;
-            }
+    body {
+        main {
+            width: 1650px;
         }
     }
-
 }

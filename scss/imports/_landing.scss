@@ -82,11 +82,11 @@ main {
         .highlightedGridItem {
             grid-column: span 3;
             background-color: $bs-dark;
-            padding: 26px $margin 26px $margin;
+            padding: $vmargin $margin $vmargin $margin;
             color: white;
         }
         .presentationMainCard {
-            grid-column: span 3;
+            grid-column: span 4;
             display: flex;
             flex-direction: row;
             position: relative;
@@ -104,62 +104,58 @@ main {
                 }
             }
             .presentationTextCard {
-                position: absolute;
+                position: relative;
                 top: 26px;
                 left: $margin;
                 color: white;
                 text-shadow: 2px 2px 10px black;
                 p {
-                    width: calc(100% - 17vw);
-                    z-index: 99;
+                    width: calc(100% - 180px);
                     @include mainBlur();
                 }
                 .presentationMainTitle {
                     h2 {
-                        z-index: 10;
                         width: 90%;
                     }
                 }
             }
         }
-        .promotionGridItem {
-            @include inputGen(2);
-            padding: $margin $margin $margin 0;
-            h2 {
-                line-height: 0.6em;
-            }
-            h3 {
-                text-shadow: 2px 2px 4px black;
-            }
-            #accelSquare, #rejectionSquare, #reopeningSquare, #assistanceSquare{
-                @include backgroundGen();
-                color: white;
-                padding: 1em;
-                min-height: 400px;
-                position: relative;
-                div {
-                    position: absolute;
-                    bottom: 0;
-                    padding: 1em;
-                    @include mainBlur();
+        .headerMain {
+            line-height: 0.7em;
+            grid-column: span 6;
+            margin-top: $margin;
+        }
+        .mSquare {
+            @include backgroundGen();
+            color: white;
+            padding: 1em;
+            min-height: 400px;
+            position: relative;
+            grid-column: span 3;
+            div {
+                position: absolute;
+                bottom: 0;
+                padding: $margin;
+                @include mainBlur();
+                > h3 {
+                    text-shadow: 2px 2px 4px black;
                 }
             }
-            #accelSquare {
-                background-image: url("../img/visa-tiempo.jpg");
-            }
-            #rejectionSquare {
-                background-image: url("../img/visa-rechazo.jpg");
-            }
-            #reopeningSquare {
-                background-image: url("../img/visa-reapertura.jpg");
-            }
-            #assistanceSquare {
-                background-image: url("../img/visa-asesoria.jpg");
-            }
+        }
+        #accelSquare {
+            background-image: url("../img/visa-tiempo.jpg");
+        }
+        #rejectionSquare {
+            background-image: url("../img/visa-rechazo.jpg");
+        }
+        #reopeningSquare {
+            background-image: url("../img/visa-reapertura.jpg");
+        }
+        #assistanceSquare {
+            background-image: url("../img/visa-asesoria.jpg");
         }
         .instagramFeed {
             grid-column: span 6;
-            padding-right: $margin;
         }
     }
 }

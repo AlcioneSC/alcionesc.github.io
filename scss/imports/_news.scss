@@ -7,16 +7,13 @@ main {
             }
             > label {
                 position: relative;
-                overflow: hidden;
-                height: 320px;
+                height: 290px;
                 background-image: $gradientPlain;
+                overflow: hidden;
                 .newsHeader {
                     position: absolute;
                     padding: 12px 12px 0 12px;
-                    bottom: 0;
-                    h3 {
-                        font-size: 32px;
-                    }
+                    top: 0;
                 }
             }
             .tabArticleWrapper {
@@ -27,13 +24,29 @@ main {
                     position: absolute;
                     display: none;
                     margin-bottom: 1.5em;
+                    .imageCarrier {
+                        width: 100%;
+                        display: flex;
+                        margin-left: $margin;
+                        padding-right: $margin;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            margin-left: -20px;
+                            font-style: italic;
+                        }
+                    }
                     p {
                         padding: 0 $margin 0 $margin;
                         margin-bottom: 0.4em;
                     }
                     h2 {
-                        padding: 24px $margin 0 $margin;
+                        padding: $margin $margin 0 $mobMargin;
+                        background-color: $bs-dark;
                         color: white;
+                    }
+                    h3 {
+                        padding: 14px $margin 0 $margin;
                     }
                     ul {
                         padding: 0 $margin 0 60px;
@@ -47,6 +60,7 @@ main {
                 &:checked {
                     + label {
                         color: white;
+//                        backdrop-filter: brightness(50%);
                         background-image: none;
                         background-color: $bs-dark;
                     }
@@ -58,7 +72,7 @@ main {
             #newsTab4:checked ~ .tabArticleWrapper > #newsItem4 {
                 display: block;
                 position: relative;
-                top: 0px;
+                top: -8px;
             }
         }
     }

@@ -9,18 +9,18 @@
     <link rel="preload" href="./js/bootstrap.min.js" as="script">
     <link rel="preload" href="https://cdn.curator.io/published/aa325402-0667-40e9-a41e-ef99d050522c.js" as="script">
     <!-- <link rel="preload" href="./css/style.css" as="style"> -->
-    <meta name="keywords" content="permanencia definitiva, extranjeria, migracion, visa, vrd" />
+    <meta name="keywords" content="permanencia definitiva, extranjeria, migracion, visa, vrd, chilezuela" />
     <!-- Enlace a Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Inicio - Asistencia Migratoria Integral</title>
+    <base target="_blank">
 </head>
 <body>
-    <!-- Empezamos.
-        Este snippet es codigo que vamos a copiar de pagina en pagina.
-        Es la barra de navegacion Bootstrap
-    -->
     <header>
+        <!-- Empezamos.
+            Este snippet es codigo que vamos a copiar de pagina en pagina.
+            Es la barra de navegacion Bootstrap -->
         <nav class="naviGroup navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class="naviLogo navbar-brand">
@@ -34,10 +34,10 @@
                         desordenada y la reemplazamos por clases Bootstrap -->
                     <div class="navbar-nav ms-auto">
                         <a href="#" class="nav-item nav-link active">Inicio</a>
-                        <a href="pages/noticias.html" class="nav-item nav-link">Noticias</a>
-                        <a href="pages/asesoria.html" class="nav-item nav-link">Visas</a>
-                        <a href="pages/inmigracion.html" class="nav-item nav-link">Inmigraci&oacute;n legal</a>
-                        <a href="pages/contacto.html" class="nav-item nav-link">Contacto</a>
+                        <a href="pages/noticias.html" target="_self" class="nav-item nav-link">Noticias</a>
+                        <a href="pages/asesoria.html" target="_self" class="nav-item nav-link">Visas</a>
+                        <a href="pages/inmigracion.html" target="_self" class="nav-item nav-link">Inmigraci&oacute;n legal</a>
+                        <a href="pages/contacto.html" target="_self" class="nav-item nav-link">Contacto</a>
                     </ul>
                 </div>
             </div>
@@ -48,8 +48,7 @@
     <main>
 
         <!--imageStack es una animación de portada. 
-            Solo va en la pagina de inicio 
-        -->
+            Solo va en la pagina de inicio -->
         <div class="imageStack">
             <ul class="slideShow">
                 <li><span></span></li>
@@ -93,37 +92,33 @@
                     <p>Ha litigado en <strong>cientos de casos</strong> llevados adelante en favor de extranjeros migrantes en Chile, principalmente, de la comunidad venezolana. Ha colaborado en la reunificaci&oacute;n familiar de m&aacute;s de <strong>100 familias</strong>, quienes han podido inmigrar legalmente a Chile.</p>
                 </div>
             </div>
-            <div class="promotionGridItem">
-                <div style="grid-column: span 2;">
-                    <h2>Nuestros servicios.</h2>
-                </div>
-                <div id="accelSquare">
-                    <div>
-                        <h3>Aceleraci&oacute;n de solicitud de visa.</h3>
-                        <p>Se pide a la Corte de Apelaciones una <strong>orden judicial</strong> para que se ordene al Servicio Nacional de Migraciones responder su solicitud en 60 d&iacute;as o menos. De no ser as&iacute;, pedimos que se apliquen <strong>multas y sanciones contra SERMIG</strong>.</p>
-                    </div>
-                </div>
-                <div id="rejectionSquare">
-                    <div>
-                        <h3>Asesor&iacute;a ante un rechazo de visa.</h3>
-                        <p>Usted nos env&iacute;a su resoluci&oacute;n de rechazo de visa. La estudiamos y preparamos un recurso para combatirla. Luego, pedimos a la Corte de Apelaciones que <strong>deje sin efecto el rechazo de su solicitud de visa o permanencia definitiva.</strong></p>
-                    </div>
-                </div>
-                <div id="reopeningSquare">
-                    <div>
-                        <h3>Reapertura de solicitud de Visa de Responsabilidad Democr&aacute;tica.</h3>
-                        <p>Reabrimos su Visa de Responsabilidad Democr&aacute;tica que fue cerrada por el COVID-19 mediante un recurso de amparo especial. As&iacute; le permitimos inmigrar a Chile presentando s&oacute;lo su certificado de antecedentes penales y su pasaporte vigente.</p>
-                    </div>
-                </div>
-                <div id="assistanceSquare">
-                    <div>
-                        <h3>Asesor&iacute;a para solicitar visa.</h3>
-                        <p>Le asesoramos en la solicitud desde el exterior de visas de trabajo y de reunificaci&oacute;n familiar. Tenemos la capacidad y el conocimiento para ayudarle a postular a ellas <strong>desde Chile</strong>.</p>
-                    </div>
+            <h2 class="headerMain">Nuestros servicios.</h2>
+            <div id="accelSquare" class="mSquare">
+                <div>
+                    <h3>Aceleraci&oacute;n de solicitud de visa.</h3>
+                    <p>Se pide a la Corte de Apelaciones una <strong>orden judicial</strong> para que se ordene al Servicio Nacional de Migraciones responder su solicitud en 60 d&iacute;as o menos. De no ser as&iacute;, pedimos que se apliquen <strong>multas y sanciones contra SERMIG</strong>.</p>
                 </div>
             </div>
+            <div id="rejectionSquare" class="mSquare">
+                <div>
+                    <h3>Asesor&iacute;a ante un rechazo de visa.</h3>
+                    <p>Usted nos env&iacute;a su resoluci&oacute;n de rechazo de visa. La estudiamos y preparamos un recurso para combatirla. Luego, pedimos a la Corte de Apelaciones que <strong>deje sin efecto el rechazo de su solicitud de visa o permanencia definitiva.</strong></p>
+                </div>
+            </div>
+            <div id="reopeningSquare" class="mSquare">
+                <div>
+                    <h3>Reapertura de solicitud de Visa de Responsabilidad Democr&aacute;tica.</h3>
+                    <p>Reabrimos su Visa de Responsabilidad Democr&aacute;tica que fue cerrada por el COVID-19 mediante un recurso de amparo especial. As&iacute; le permitimos inmigrar a Chile presentando s&oacute;lo su certificado de antecedentes penales y su pasaporte vigente.</p>
+                </div>
+            </div>
+            <div id="assistanceSquare" class="mSquare">
+                <div>
+                    <h3>Asesor&iacute;a para solicitar visa.</h3>
+                    <p>Le asesoramos en la solicitud desde el exterior de visas de trabajo y de reunificaci&oacute;n familiar. Tenemos la capacidad y el conocimiento para ayudarle a postular a ellas <strong>desde Chile</strong>.</p>
+                </div>
+            </div>
+            <h2 class="headerMain">Vea lo último en nuestro Instagram.</h2>
             <div class="instagramFeed">
-                <h2>Vea lo último en nuestro Instagram.</h2>
                 <div id="curator-feed-default-feed-layout">
                     <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
                 </div>

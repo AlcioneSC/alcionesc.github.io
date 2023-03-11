@@ -7,7 +7,9 @@
     <!-- Enlace a Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <meta name="keywords" content="permanencia definitiva, extranjeria, migracion, visa, vrd, chilezuela" />
     <title>Inmigraci&oacute;n legal - Asistencia Migratoria Integral</title>
+    <base target="_blank">
 </head>
 <body>
     <header>
@@ -23,11 +25,11 @@
                     <!-- Cambio recomendado por Bootstrap. Prescindimos de la lista
                         desordenada y la reemplazamos por clases Bootstrap -->
                     <div class="navbar-nav ms-auto">
-                        <a href="../index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="../pages/noticias.html" class="nav-item nav-link">Noticias</a>
-                        <a href="../pages/asesoria.html" class="nav-item nav-link">Visas</a>
-                        <a href="#" class="nav-item nav-link active">Inmigraci&oacute;n legal</a>
-                        <a href="../pages/contacto.html" class="nav-item nav-link">Contacto</a>
+                        <a href="../index.html" target="_self" class="nav-item nav-link">Inicio</a>
+                        <a href="../pages/noticias.html" target="_self" class="nav-item nav-link">Noticias</a>
+                        <a href="../pages/asesoria.html" target="_self" class="nav-item nav-link">Visas</a>
+                        <a href="#" target="_self" class="nav-item nav-link active">Inmigraci&oacute;n legal</a>
+                        <a href="../pages/contacto.html" target="_self" class="nav-item nav-link">Contacto</a>
                     </ul>
                 </div>
             </div>
@@ -45,28 +47,28 @@
         <div class="mainGrid">
             <div class="socialSpan">
                 <div class="socialNetwork">
-                    <a href="https://www.facebook.com/ami.emanriquez.legal" target="_blank"><img src="../img/facebook.svg" alt="Facebook"></a>
-                    <a href="https://www.twitter.com/ami.emanriquez" target="_blank"><img src="../img/twitter.svg" alt="Twitter"></a>
-                    <a href="https://instagr.am/ami.emanriquez" target="_blank"><img src="../img/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/ami.emanriquez.legal"><img src="../img/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.twitter.com/ami.emanriquez"><img src="../img/twitter.svg" alt="Twitter"></a>
+                    <a href="https://instagr.am/ami.emanriquez"><img src="../img/instagram.svg" alt="Instagram"></a>
                 </div>
             </div>
             <div class="tabSelectorS">
                 <input type="radio" name="serv" id="servTab1" class="servTabs" checked="checked" />
-                <label for="servTab1">
+                <label for="servTab1" id="servTabLabel1">
                     <div class="newsHeader">
                         <h3>Aceleraci&oacute;n de solicitud de visa.</h3>
                         <p>No pierda trabajos ni oportunidades por las demoras del Servicio Nacional de Migraciones.</p>
                     </div>
                 </label>
                 <input type="radio" name="serv" id="servTab2" class="servTabs" />
-                <label for="servTab2">
+                <label for="servTab2" id="servTabLabel2">
                     <div class="newsHeader">
                         <h3>Rechazos de visa.</h3>
                         <p>No pierda la esperanza. Lo m&aacute;s probable es que el Servicio Nacional de Migraciones no tenga la raz&oacute;n.</p>
                     </div>
                 </label>
                 <input type="radio" name="serv" id="servTab3" class="servTabs" />
-                <label for="servTab3">
+                <label for="servTab3" id="servTabLabel3">
                     <div class="newsHeader">
                         <h3>Asesor&iacute;a a migrantes legales.</h3>
                         <p>Usted en todo momento sabr&aacute; qu&eacute; hacer.</p>
@@ -74,12 +76,56 @@
                 </label>
                 <div class="tabArticleWrapper">
                     <div id="servItem1" class="mainParagraph">
-                        <h2>Visa de reunificaci&oacute;n familiar</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nulla, magni facilis voluptas officia recusandae voluptatibus laboriosam, veritatis corporis ex repellendus ipsum debitis pariatur harum enim suscipit similique saepe eaque!</p>
+                        <h2>Aceleramos su visa. Y su vida.</h2>
+                        <h3>Su solicitud de visa o permanencia definitiva se ha demorado demasiado.</h3>
+                        <p>La Ley de Bases de los Procedimientos Admnistrativos dice de forma clara que <strong>el Servicio Nacional de Migraciones no se puede demorar m&aacute;s de 6 meses en darle su visa.</strong> Sin embargo, el SERMIG ha buscado toda clase de excusas para justificar su demora, como la pandemia del COVID-19 y la gran cantidad de migrantes que ha llegado. Esas excusas <strong>no sirven</strong>.</p>
+                        <p>Hay por lo menos dos cosas que han ocurrido que son enteramente culpa del Servicio Nacional de Migraciones:</p>
+                        <ul>
+                            <li><a href="https://www.ciperchile.cl/2022/02/21/falla-en-el-sistema-de-migraciones-y-falta-de-respaldo-obligaron-a-reconstruir-datos-de-miles-de-extranjeros-desde-1993-a-2021/">La destrucci&oacute;n de la informaci&oacute;n de los migrantes y el hackeo del sistema B3000, en octubre de 2021</a>. Esto provoc&oacute; que el Servicio Nacional de Migraciones tuviera que perder muchos meses reconstruyendo la informaci&oacute;n de los migrantes.</li>
+                            <li><a href="https://www.ex-ante.cl/la-designacion-mas-polemica-del-servicio-nacional-de-migraciones/">El descabezamiento de m&aacute;s de 10 Direcciones Regionales del Servicio Nacional de Migraciones</a>, en donde personas que fueron designadas por procesos de Alta Direcci&oacute;n P&uacute;blica, algunos con m&aacute;s de 15 a&ntilde;os de experiencia en materia migratoria, fueron reemplazadas por personas sin experiencia, adictas a este gobierno.</li>
+                        </ul>
+                        <div class="imageCarrier">
+                            <img src="../img/visas.svg" width="70%" height="70%" alt="Visas otorgadas. En 2020 y 2021 se redujo much&iacute;simo su n&uacute;mero.">
+                            <p>Visas y permanencias definitivas otorgadas por el Servicio Nacional de Migraciones. En 2020 y 2021 se redujo much&iacute;simo su n&uacute;mero.
+                                <br>Fuente: <a href="https://www.observatoriomigraciones.cl/wp-content/uploads/2022/07/ANUARIO-2022.pdf">Servicio Jesuita a Migrantes.</a>
+                            </p>
+                        </div>
+                        <p>Eso ha significado que los procesos del Servicio se han vuelto menos eficientes. Como se puede apreciar en el gr&aacute;fico, a&uacute;n no se vuelve a los niveles de funcionamiento de 2019, a pesar que la cantidad de migrantes solicitando visas es muy superior. Las cifras preliminares para 2022 muestran que, si bien las visas otorgadas han aumentado, a&uacute;n no se alcanzan los niveles de rendimiento que hab&iacute;a en 2019.</p>
+                        <p>A esto se suma que desde el 30 de septiembre de 2021, al terminar el estado de cat&aacute;strofe por el COVID-19, todos los servicios p&uacute;blicos han regresado al trabajo, salvo, de forma inexplicable, el Servicio Nacional de Migraciones. Asesores jur&iacute;dicos han hecho <a href="https://www.elmostrador.cl/noticias/opinion/2023/02/15/tres-anos-sin-servicio-nacional-de-migraciones/">sonar la alarma de que durante tres a&ntilde;os no hemos tenido Servicio Nacional de Migraciones</a>. Y esto se ha traducido en un menor nivel de servicio comparado con el que hab&iacute;a antes de la pandemia.</p>
+                        <p>Por eso, las causas del mal funcionamiento del Servicio Nacional de Migraciones no son ni el COVID-19, ni la gran cantidad de migrantes que ha llegado. Es simplemente la <strong>negligencia del propio Servicio</strong>, que ha perdido sus papeles y que no es capaz de tramitar los papeles que s&iacute; tiene como lo hac&iacute;a antes.</p>
+                        <p>Tres a&ntilde;os de demora no son normales. Dos tampoco. Uno menos. <strong>Es hora de reclamar.</strong></p>
+                        <h3>&iquest;Qu&eacute; se hace para solucionar la demora&quest;</h3>
+                        <p>Yo interpongo un <strong>recurso de protecci&oacute;n</strong> en contra del Servicio Nacional de Migraciones. Esta es una herramienta que nos da la Constituci&oacute;n chilena para lograr que se dicte una <strong>orden judicial</strong> que imponga al SERMIG el deber de resolver su solicitud de visa o permanencia definitiva en 60 d&iacute;s o menos. Si esto no ocurre, se piden sanciones en contra del SERMIG.</p>
+                        <p>Despu&eacute;s de interponer el recurso, lo supervisamos para que el SERMIG cumpla con los tiempos de respuesta. Si no cumple, en todas las etapas se pide que el SERMIG cumpla con los plazos, <strong>minimizando el tiempo de demora en la tramitaci&oacute;n</strong>. Esto hace posible que tengamos un tiempo promedio estimado de <strong>cinco meses</strong> entre que se interpone el recurso y que el cliente recibe la visa o permanencia definitiva en su correo electr&oacute;nico.</p>
+                        <h3>&iquest;Cu&aacute;les han sido los resultados&quest;</h3>
+                        <p>En m&aacute;s de un 90% de los casos el cliente recibe su permanencia definitiva o su visa en su correo electr&oacute;nico. Ese es el verdadero resultado.</p>
                     </div>
                     <div id="servItem2" class="mainParagraph">
-                        <h2>Visa de Responsabilidad Democr&aacute;tica</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sapiente atque beatae cupiditate, sit accusantium nesciunt harum pariatur praesentium nostrum voluptatem, dolores ea non eius aliquam unde et facilis quas?</p>
+                        <h2>Disfrute de una nueva oportunidad.</h2>
+                        <h3>Puede ser que el rechazo de su visa o permanencia definitiva no corresponda.</h3>
+                        <p>El Servicio Nacional de Migraciones perdi&oacute; toda su informaci&oacute;n en octubre de 2021. Por eso ha debido reconstruir esa base de datos usando los datos de otros organismos, como la Polic&iacute;a de Investigaciones de Chile o el Servicio de Registro Civil e Identificaci&oacute;n. Y, como en toda reconstrucci&oacute;n manual, <strong>ha habido errores</strong>. Es en base a esos errores que el Servicio Nacional de Migraciones ha denegado muchas visas.</p>
+                        <p>A esto se suma que en muchos casos el Servicio Nacional de Migraciones considera s&oacute;lo la informaci&oacute;n desactualizada de cuando usted ten&iacute;a visa temporaria, lo cual, dos o tres a&ntilde;os despu&eacute;s, no tiene sentido. A modo de ejemplo: es frecuente que los m&eacute;dicos extranjeros, cuando llegan a Chile, trabajen en empleos mal pagados, recibiendo sueldos que no llegan al salario m&iacute;nimo. Luego, estos m&eacute;dicos revalidan sus t&iacute;tulos y son contratados en cl&iacute;nicas cobrando el salario que les corresponde, pero estas personas, para el SERMIG, <em>no tienen estabilidad econ&oacute;mica</em>, por lo que sus permanencias definitivas son rechazadas. Esto <strong>no tiene sentido</strong> y podemos revertirlo.</p>
+                        <p>Algunos casos cl&aacute;sicos de rechazo son:</p>
+                        <ul>
+                            <li><strong>Estad&iacute;a fuera del pa&iacute;s por m&aacute;s de 180 d&iacute;as</strong>, cuando usted no ha salido del pa&iacute;s siquiera un d&iacute;a.</li>
+                            <li><strong>Peticiones de documentos no satisfechas</strong>. Es l&oacute;gico que usted no sepa qu&eacute; documento entregarle al SERMIG cuando el Servicio no le ha dicho con precisi&oacute;n qu&eacute; necesita. Una simple frase "El documento no era el que se estaba solicitando" no sirve.</li>
+                            <li><strong>Falta de estabilidad econ&oacute;mica</strong>, cuando el SERMIG simplemente no ha actualizado sus datos.</li>
+                            <li><strong>No cumplimiento del plazo de residencia</strong>, cuando usted s&iacute; cumple con ese plazo y el rechazo se debe en realidad a un error en la reconstrucci&oacute;n de sus datos.</li>
+                            <li><strong><em>null, false</em> o espacio en blanco</strong>. Lo hemos visto en un par de ocasiones.</li>
+                        </ul>
+                        <h3>&iquest;Qu&eacute; se hace para solucionarlo&quest;</h3>
+                        <p>Presentamos un <strong>recurso de protecci&oacute;n</strong> en contra del Servicio Nacional de Migraciones. Esta es una herramienta que nos da la Constituci&oacute;n chilena para lograr que se dicte una <strong>orden judicial</strong> que invalide la resoluci&oacute;n denegatoria que no corresponde y ordene al Servicio Nacional de Migraciones evaluar nuevamente los antecedentes conforme a Derecho, para que la visa o permanencia definitiva sea otorgada.</p>
+                        <h3>&iquest;Cu&aacute;les han sido los resultados&quest;</h3>
+                        <p>En un porcentaje significativo de los casos el rechazo de la visa es revertido y se ordena al Servicio Nacional de Migraciones que conceda la visa o permanencia definitiva rechazada.</p>
+                    </div>
+                    <div id="servItem3" class="mainParagraph">
+                        <h2>A diferencia del SERMIG, estamos aqu&iacute;.</h2>
+                        <h3>Puede que ocurran algunos problemas por el camino.</h3>
+                        <p>El Servicio Nacional de Migraciones no tiene ninguna respuesta, pues ha renunciado a atender a los migrantes presencialmente. Por eso la carga de solucionar las dudas migratorias, que por ley le corresponde al SERMIG, ha debido recaer en abogados como yo.</p>
+                        <p>La falta de asesor&iacute;a oportuna hace que usted pueda cometer errores en su postulaci&oacute;n o en la preparaci&oacute;n de sus tr&aacute;mites migratorios, con graves consecuencias.</p>
+                        <h3>Estamos ah&iacute;.</h3>
+                        <p>Si usted necesita asesor&iacute;a, cont&aacute;ctenos mediante nuestras redes sociales o mediante WhatsApp.</p>
+                        <p>Le responderemos y le daremos orientaciones para que siga el mejor curso de acci&oacute;n disponible, para que progrese r&aacute;pido hacia la permanencia definitiva.</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +143,7 @@
         </div>
     </footer>
 
-    <!-- Popper. Activar sólo si es necesario.
+    <!-- Popper. Activar s&oacute;lo si es necesario.
     <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
     -->
     <script src="../js/bootstrap.min.js"></script>

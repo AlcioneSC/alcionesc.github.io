@@ -16,7 +16,7 @@
     display: grid;
     position: relative;
     grid-template-columns: repeat($columns, 1fr);
-    gap: 10px;
+    gap: $vmobMargin;
 }
 
 header {
@@ -53,7 +53,6 @@ header {
             bottom: $margin;
             left: $margin;
             h1 {
-                line-height: 1em;
                 color: white;
                 text-shadow: 2px 2px 10px black;
             }
@@ -62,35 +61,45 @@ header {
 }
 
 main {
-    .mainGrid {
+    > .mainGrid {
         display: grid;
-        grid-template-columns: 64px repeat(6, 2fr);
-        margin: 10px 0 0 0;
+        grid-template-columns: 56px repeat(6, 2fr) $margin;
+        margin-top: 10px;
+        gap: 10px;
         .socialSpan {
             grid-column: span 1;
-            grid-row: span 999;
+            grid-row: span 9;
+            align-items: center;
             .socialNetwork {
                 position: -webkit-sticky;
                 position: sticky;
-                top: 76px;
+                top: 74px;
                 width: 64px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: 10px;
                 img {
                     width: 48px;
                     height: 48px;
-                    margin-bottom: 16px;
                 }    
             }
         }
         .headerAlert {
-            grid-column: span 6;
+            grid-column: span 7;
             padding: 12px 20px 0 20px;
             background-image: $gradientAlert;
             color: white;
-            margin-bottom: 12px;
             text-shadow: 2px 2px 4px black;
+            a:link {
+                color: skyblue;
+            }
+            a:visited {
+                color: white;
+            }
+            a:hover {
+                color: blue;
+            }
         }
     }
 }
@@ -98,7 +107,7 @@ main {
 footer {
     display: flex;
     size: 100%;
-    padding: 3em 2em 2em calc(100vw - 300px);
+    padding: 3em 2em 2em calc(100vw - 280px);
     color: white;
     font-size: $size7;
     hr {
