@@ -14,15 +14,15 @@ main {
                 }
             }
             #visaTab1:checked ~ .tabContainerV #visaTabLabel1 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-reapertura.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-reapertura.jpg");
                 color: white;
             }
             #visaTab2:checked ~ .tabContainerV #visaTabLabel2 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-trabajo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-trabajo.jpg");
                 color: white;
             }
             #visaTab3:checked ~ .tabContainerV #visaTabLabel3 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-rf.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-rf.jpg");
                 color: white;
             }
             #visaTab1:checked ~ .tabArticleWrapper > #visaItem1,

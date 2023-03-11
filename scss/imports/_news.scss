@@ -17,25 +17,25 @@ main {
                 }
             }
             #newsTab1:checked ~ .tabContainerN #newsTabLabel1 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/noticias-sermig.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/noticias-sermig.jpg");
                 color: white;
             }
             #newsTab2:checked ~ .tabContainerN #newsTabLabel2 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-rechazo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-rechazo.jpg");
                 color: white;
             }
             #newsTab3:checked ~ .tabContainerN #newsTabLabel3 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
                 color: white;
             }
             #newsTab4:checked ~ .tabContainerN #newsTabLabel4 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/noticias-nohab.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/noticias-nohab.jpg");
                 color: white;
             }
-            #newsTab1:checked ~ .tabArticleWrapper #newsItem1,
-            #newsTab2:checked ~ .tabArticleWrapper #newsItem2,
-            #newsTab3:checked ~ .tabArticleWrapper #newsItem3,
-            #newsTab4:checked ~ .tabArticleWrapper #newsItem4 {
+            #newsTab1:checked ~ .tabArticleWrapper > #newsItem1,
+            #newsTab2:checked ~ .tabArticleWrapper > #newsItem2,
+            #newsTab3:checked ~ .tabArticleWrapper > #newsItem3,
+            #newsTab4:checked ~ .tabArticleWrapper > #newsItem4 {
                 display: block;
             }
         }

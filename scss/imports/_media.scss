@@ -100,24 +100,37 @@
                         .tab {
                             grid-column: span 6;
                             height: 90px;
+                            h3, p {
+                                margin-bottom: 0.1em;
+                            }
                         }
                     }
                     .tabArticleWrapper {
                         .mainParagraph {
-                            p {
+                            p, h3, .quoteMP {
                                 padding: 0 $mobMargin 0 $mobMargin;
                             }
                             h2 {
                                 padding: $mobMargin $mobMargin 0 $mobMargin;
                             }
-                            h3 {
-                                padding: 0 $mobMargin 0 $mobMargin;
-                            }
                             ul {
                                 padding: 0 $mobMargin 0 26px;
                             }
+                            table {
+                                margin: $mobMargin;
+                                tr {
+                                    td {
+                                        font-size: $size7;
+                                        ul {
+                                            font-size: $size7;
+                                        }
+                                    }
+                                }
+                            }
                             .imageCarrier {
                                 flex-direction: column;
+                                margin: 0 $mobMargin $mobMargin $mobMargin;
+                                padding: $mobMargin 0 $mobMargin 0;
                                 img {
                                     width: 100%;
                                     height: 100%;
@@ -156,6 +169,18 @@
                 .mSquare {
                     div {
                         padding: $mobMargin;
+                    }
+                }
+                .tabSelector {
+                    .tabContainer {
+                        .tab {
+                            h3 {
+                                font-size: $size5;
+                            }
+                            p {
+                                font-size: $size7;
+                            }
+                        }
                     }
                 }
                 .highlightedGridItem {

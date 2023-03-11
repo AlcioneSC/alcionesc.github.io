@@ -14,15 +14,15 @@ main {
                 }
             }
             #servTab1:checked ~ .tabContainerS #servTabLabel1 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
                 color: white;
             }
             #servTab2:checked ~ .tabContainerS #servTabLabel2 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-rechazo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/visa-rechazo.jpg");
                 color: white;
             }
             #servTab3:checked ~ .tabContainerS #servTabLabel3 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/asesoria-serv.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.4), rgba(34,37,41,1)), url("../img/asesoria-serv.jpg");
                 color: white;
             }
             #servTab1:checked ~ .tabArticleWrapper > #servItem1,

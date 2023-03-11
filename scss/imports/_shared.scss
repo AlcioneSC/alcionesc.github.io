@@ -104,19 +104,27 @@ main {
                 .mainParagraph {
                     display: none;
                     .imageCarrier {
-                        width: 100%;
+                        width: auto;
                         display: flex;
                         justify-content: center;
+                        margin: $mobMargin $margin $mobMargin $margin;
+                        padding: $margin $mobMargin $margin $margin;
+                        background-color: rgb(34, 37, 41, 0.2);
                         align-items: center;
-                        p {
-                            flex: 30%;
-                            margin-left: -20px;
+                        .legendCarrier {
+                            flex: 25%;
+                            font-size: 0.8em;
                             font-style: italic;
                         }
                     }
                     p {
                         padding: 0 $margin 0 $margin;
-                        margin-bottom: 0.4em;
+                        margin-bottom: 0.7em;
+                    }
+                    .quoteMP {
+                        padding: 0 64px 0 64px;
+                        margin-bottom: 0.3em;
+                        font-style: italic;
                     }
                     h2 {
                         padding: $margin $margin 0 $mobMargin;
@@ -128,6 +136,21 @@ main {
                     }
                     ul {
                         padding: 0 $margin 0 60px;
+                    }
+                    table {
+                        margin: $mobMargin $margin $mobMargin $margin;
+                        border: solid 1px black;
+                        tr {
+                            border: solid 1px black;
+                            td {
+                                border: solid 1px black;
+                                padding: 10px;
+                                ul {
+                                    padding: 0 0 0 18px;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
                     }
                 }    
             }
@@ -158,10 +181,10 @@ footer {
     color: white;
     font-size: $size7;
     hr {
-        border: 1px solid white;
+        border: 0.1em solid white;
         margin: 3px 0 2px 0;
     }
     .miau {
-        font-family: 'DIN Alternate', Helvetica, Arial, sans-serif;
+        font-weight: bold;
     }
 }
