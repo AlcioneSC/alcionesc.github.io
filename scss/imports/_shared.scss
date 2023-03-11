@@ -11,14 +11,6 @@
     background-attachment: local;
 }
 
-@mixin inputGen($columns) {
-    grid-column: span 6;
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat($columns, 1fr);
-    gap: $vmobMargin;
-}
-
 header {
     .navbar {
         opacity: 0.9;
@@ -114,8 +106,6 @@ main {
                     .imageCarrier {
                         width: 100%;
                         display: flex;
-                        margin-left: $margin;
-                        padding-right: $margin;
                         justify-content: center;
                         align-items: center;
                         p {

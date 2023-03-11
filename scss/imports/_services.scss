@@ -10,7 +10,7 @@ main {
                     background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url("../img/visa-rechazo.jpg");
                 }
                 #servTabLabel3 {
-                    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");
+                    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url("../img/asesoria-serv.jpg");
                 }
             }
             #servTab1:checked ~ .tabContainerS #servTabLabel1 {
@@ -22,7 +22,7 @@ main {
                 color: white;
             }
             #servTab3:checked ~ .tabContainerS #servTabLabel3 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/asesoria-serv.jpg");
                 color: white;
             }
             #servTab1:checked ~ .tabArticleWrapper > #servItem1,

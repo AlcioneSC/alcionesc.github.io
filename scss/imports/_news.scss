@@ -4,24 +4,24 @@ main {
             .tabContainerN {
                 grid-template-columns: repeat(4, 1fr);
                 #newsTabLabel1 {
-                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");   
+                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/noticias-sermig.jpg");   
                 }
                 #newsTabLabel2 {
-                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");   
+                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-rechazo.jpg");   
                 }
                 #newsTabLabel3 {
                     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");   
                 }
                 #newsTabLabel4 {
-                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");   
+                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/noticias-nohab.jpg");   
                 }
             }
             #newsTab1:checked ~ .tabContainerN #newsTabLabel1 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/noticias-sermig.jpg");
                 color: white;
             }
             #newsTab2:checked ~ .tabContainerN #newsTabLabel2 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-rechazo.jpg");
                 color: white;
             }
             #newsTab3:checked ~ .tabContainerN #newsTabLabel3 {
@@ -29,7 +29,7 @@ main {
                 color: white;
             }
             #newsTab4:checked ~ .tabContainerN #newsTabLabel4 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/noticias-nohab.jpg");
                 color: white;
             }
             #newsTab1:checked ~ .tabArticleWrapper #newsItem1,
