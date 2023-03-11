@@ -1,78 +1,24 @@
 main {
     .mainGrid {
         .tabSelector {
-            @include inputGen(4);
-            input[type="radio"] {
-                display: none;
-            }
-            > label {
-                position: relative;
-                height: 290px;
-                background-image: $gradientPlain;
-                overflow: hidden;
-                .newsHeader {
-                    position: absolute;
-                    padding: 12px 12px 0 12px;
-                    top: 0;
+            .tabContainerN {
+                grid-template-columns: repeat(4, 1fr);
+                #newsTabLabel1 {
+                    background-image: url("../img/visa-tiempo.jpg");   
                 }
             }
-            .tabArticleWrapper {
-                grid-column: span 4;
-                background-image: $gradientPlain;
-                margin-bottom: 12px;
-                .mainParagraph {
-                    position: absolute;
-                    display: none;
-                    margin-bottom: 1.5em;
-                    .imageCarrier {
-                        width: 100%;
-                        display: flex;
-                        margin-left: $margin;
-                        padding-right: $margin;
-                        justify-content: center;
-                        align-items: center;
-                        p {
-                            margin-left: -20px;
-                            font-style: italic;
-                        }
-                    }
-                    p {
-                        padding: 0 $margin 0 $margin;
-                        margin-bottom: 0.4em;
-                    }
-                    h2 {
-                        padding: $margin $margin 0 $mobMargin;
-                        background-color: $bs-dark;
-                        color: white;
-                    }
-                    h3 {
-                        padding: 14px $margin 0 $margin;
-                    }
-                    ul {
-                        padding: 0 $margin 0 60px;
-                    }
-                }    
+            #newsTab1:checked ~ .tabContainerN #newsTabLabel1,
+            #newsTab2:checked ~ .tabContainerN #newsTabLabel2,
+            #newsTab3:checked ~ .tabContainerN #newsTabLabel3,
+            #newsTab4:checked ~ .tabContainerN #newsTabLabel4 {
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                color: white;
             }
-            #newsTab1,
-            #newsTab2,
-            #newsTab3,
-            #newsTab4 {
-                &:checked {
-                    + label {
-                        color: white;
-//                        backdrop-filter: brightness(50%);
-                        background-image: none;
-                        background-color: $bs-dark;
-                    }
-                }
-            }
-            #newsTab1:checked ~ .tabArticleWrapper > #newsItem1,
-            #newsTab2:checked ~ .tabArticleWrapper > #newsItem2,
-            #newsTab3:checked ~ .tabArticleWrapper > #newsItem3,
-            #newsTab4:checked ~ .tabArticleWrapper > #newsItem4 {
+            #newsTab1:checked ~ .tabArticleWrapper #newsItem1,
+            #newsTab2:checked ~ .tabArticleWrapper #newsItem2,
+            #newsTab3:checked ~ .tabArticleWrapper #newsItem3,
+            #newsTab4:checked ~ .tabArticleWrapper #newsItem4 {
                 display: block;
-                position: relative;
-                top: -8px;
             }
         }
     }

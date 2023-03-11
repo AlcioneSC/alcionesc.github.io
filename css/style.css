@@ -8,7 +8,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-kerning: normal;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 body h1, body h2, body h3 {
   font-family: "DIN Alternate", Helvetica, Arial, sans-serif;
@@ -52,29 +52,31 @@ header .secondaryHeader img {
   object-position: 50% 70%;
 }
 header .secondaryHeader .secondaryFloating {
-  z-index: 5;
-  width: 80%;
+  max-width: 80%;
   position: absolute;
   bottom: 36px;
-  left: 36px;
+  left: 0;
+  padding-left: 36px;
+  -webkit-backdrop-filter: blur(10px) brightness(70%);
+  backdrop-filter: blur(10px) brightness(70%);
 }
 header .secondaryHeader .secondaryFloating h1 {
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-main > .mainGrid {
+main .mainGrid {
   display: grid;
   grid-template-columns: 56px repeat(6, 2fr) 36px;
   margin-top: 10px;
   gap: 10px;
 }
-main > .mainGrid .socialSpan {
+main .mainGrid .socialSpan {
   grid-column: span 1;
   grid-row: span 9;
   align-items: center;
 }
-main > .mainGrid .socialSpan .socialNetwork {
+main .mainGrid .socialSpan .socialNetwork {
   position: -webkit-sticky;
   position: sticky;
   top: 74px;
@@ -84,24 +86,82 @@ main > .mainGrid .socialSpan .socialNetwork {
   align-items: center;
   gap: 10px;
 }
-main > .mainGrid .socialSpan .socialNetwork img {
+main .mainGrid .socialSpan .socialNetwork img {
   width: 48px;
   height: 48px;
 }
-main > .mainGrid .headerAlert {
+main .mainGrid .tabSelector {
+  grid-column: span 6;
+}
+main .mainGrid .tabSelector .mainTabs {
+  display: none;
+}
+main .mainGrid .tabSelector .tabContainer {
+  display: grid;
+}
+main .mainGrid .tabSelector .tabContainer .tab {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  background-attachment: local;
+}
+main .mainGrid .tabSelector .tabContainer .tab .tabHeader {
+  position: absolute;
+  padding: 12px 12px 0 12px;
+  top: 0;
+}
+main .mainGrid .tabSelector .tabArticleWrapper {
+  background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
+  padding-bottom: 36px;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph {
+  display: none;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier {
+  width: 100%;
+  display: flex;
+  margin-left: 36px;
+  padding-right: 36px;
+  justify-content: center;
+  align-items: center;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier p {
+  flex: 30%;
+  margin-left: -20px;
+  font-style: italic;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph p {
+  padding: 0 36px 0 36px;
+  margin-bottom: 0.4em;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h2 {
+  padding: 36px 36px 0 10px;
+  background-color: #222529;
+  color: white;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h3 {
+  padding: 14px 36px 0 36px;
+}
+main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph ul {
+  padding: 0 36px 0 60px;
+}
+main .mainGrid .headerAlert {
   grid-column: span 7;
   padding: 12px 20px 0 20px;
   background-image: radial-gradient(circle 674px at 18.3% 77%, rgb(139, 186, 244) 3.4%, rgb(15, 51, 92) 56.6%);
   color: white;
   text-shadow: 2px 2px 4px black;
 }
-main > .mainGrid .headerAlert a:link {
+main .mainGrid .headerAlert a:link {
   color: skyblue;
 }
-main > .mainGrid .headerAlert a:visited {
+main .mainGrid .headerAlert a:visited {
   color: white;
 }
-main > .mainGrid .headerAlert a:hover {
+main .mainGrid .headerAlert a:hover {
   color: blue;
 }
 
@@ -177,8 +237,7 @@ main .imageStack .slideShow li:nth-child(5) span {
   }
 }
 main .imageStack .floatingHeader {
-  z-index: 20;
-  width: 80%;
+  max-width: 80%;
   position: absolute;
   bottom: 36px;
   left: 0;
@@ -188,7 +247,7 @@ main .imageStack .floatingHeader h1 {
   padding-left: 36px;
   color: white;
   text-shadow: 2px 2px 10px black;
-  line-height: 1.1em;
+  line-height: 1.2em;
   -webkit-backdrop-filter: blur(10px) brightness(70%);
   backdrop-filter: blur(10px) brightness(70%);
 }
@@ -225,16 +284,16 @@ main .mainGrid .presentationMainCard .presentationTextCard {
   position: relative;
   top: 26px;
   left: 36px;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+  color: #222529;
 }
 main .mainGrid .presentationMainCard .presentationTextCard p {
-  width: calc(100% - 180px);
-  -webkit-backdrop-filter: blur(10px) brightness(70%);
-  backdrop-filter: blur(10px) brightness(70%);
+  width: calc(100% - 240px);
+  -webkit-backdrop-filter: blur(10px) brightness(120%);
+  backdrop-filter: blur(10px) brightness(120%);
 }
 main .mainGrid .presentationMainCard .presentationTextCard .presentationMainTitle h2 {
   width: 90%;
+  color: #222529;
 }
 main .mainGrid .headerMain {
   line-height: 0.7em;
@@ -278,143 +337,54 @@ main .mainGrid .instagramFeed {
   grid-column: span 6;
 }
 
-main .mainGrid .tabSelector, main .mainGrid .tabSelectorS, main .mainGrid .tabSelectorV {
-  grid-column: span 6;
-  display: grid;
-  position: relative;
+main .mainGrid .tabSelector .tabContainerN {
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
 }
-main .mainGrid .tabSelector input[type=radio], main .mainGrid .tabSelectorS input[type=radio], main .mainGrid .tabSelectorV input[type=radio] {
-  display: none;
-}
-main .mainGrid .tabSelector > label, main .mainGrid .tabSelectorS > label, main .mainGrid .tabSelectorV > label {
-  position: relative;
-  height: 290px;
-  background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
-  overflow: hidden;
-}
-main .mainGrid .tabSelector > label .newsHeader, main .mainGrid .tabSelectorS > label .newsHeader, main .mainGrid .tabSelectorV > label .newsHeader {
-  position: absolute;
-  padding: 12px 12px 0 12px;
-  top: 0;
-}
-main .mainGrid .tabSelector .tabArticleWrapper, main .mainGrid .tabSelectorS .tabArticleWrapper, main .mainGrid .tabSelectorV .tabArticleWrapper {
-  grid-column: span 4;
-  background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
-  margin-bottom: 12px;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph {
-  position: absolute;
-  display: none;
-  margin-bottom: 1.5em;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph .imageCarrier, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph .imageCarrier {
-  width: 100%;
-  display: flex;
-  margin-left: 36px;
-  padding-right: 36px;
-  justify-content: center;
-  align-items: center;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier p, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph .imageCarrier p, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph .imageCarrier p {
-  margin-left: -20px;
-  font-style: italic;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph p, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph p, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph p {
-  padding: 0 36px 0 36px;
-  margin-bottom: 0.4em;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h2, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph h2, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph h2 {
-  padding: 36px 36px 0 10px;
-  background-color: #222529;
-  color: white;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h3, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph h3, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph h3 {
-  padding: 14px 36px 0 36px;
-}
-main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph ul, main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph ul, main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph ul {
-  padding: 0 36px 0 60px;
-}
-main .mainGrid .tabSelector #newsTab1:checked + label, main .mainGrid .tabSelectorS #newsTab1:checked + label, main .mainGrid .tabSelectorV #newsTab1:checked + label,
-main .mainGrid .tabSelector #newsTab2:checked + label,
-main .mainGrid .tabSelectorS #newsTab2:checked + label,
-main .mainGrid .tabSelectorV #newsTab2:checked + label,
-main .mainGrid .tabSelector #newsTab3:checked + label,
-main .mainGrid .tabSelectorS #newsTab3:checked + label,
-main .mainGrid .tabSelectorV #newsTab3:checked + label,
-main .mainGrid .tabSelector #newsTab4:checked + label,
-main .mainGrid .tabSelectorS #newsTab4:checked + label,
-main .mainGrid .tabSelectorV #newsTab4:checked + label {
-  color: white;
-  background-image: none;
-  background-color: #222529;
-}
-main .mainGrid .tabSelector #newsTab1:checked ~ .tabArticleWrapper > #newsItem1, main .mainGrid .tabSelectorS #newsTab1:checked ~ .tabArticleWrapper > #newsItem1, main .mainGrid .tabSelectorV #newsTab1:checked ~ .tabArticleWrapper > #newsItem1,
-main .mainGrid .tabSelector #newsTab2:checked ~ .tabArticleWrapper > #newsItem2,
-main .mainGrid .tabSelectorS #newsTab2:checked ~ .tabArticleWrapper > #newsItem2,
-main .mainGrid .tabSelectorV #newsTab2:checked ~ .tabArticleWrapper > #newsItem2,
-main .mainGrid .tabSelector #newsTab3:checked ~ .tabArticleWrapper > #newsItem3,
-main .mainGrid .tabSelectorS #newsTab3:checked ~ .tabArticleWrapper > #newsItem3,
-main .mainGrid .tabSelectorV #newsTab3:checked ~ .tabArticleWrapper > #newsItem3,
-main .mainGrid .tabSelector #newsTab4:checked ~ .tabArticleWrapper > #newsItem4,
-main .mainGrid .tabSelectorS #newsTab4:checked ~ .tabArticleWrapper > #newsItem4,
-main .mainGrid .tabSelectorV #newsTab4:checked ~ .tabArticleWrapper > #newsItem4 {
-  display: block;
-  position: relative;
-  top: -8px;
-}
-
-main .mainGrid .tabSelectorV {
-  grid-column: span 6;
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-main .mainGrid .tabSelectorV #visaTab1:checked + label,
-main .mainGrid .tabSelectorV #visaTab2:checked + label,
-main .mainGrid .tabSelectorV #visaTab3:checked + label {
-  color: white;
-  background-image: none;
-  background-color: #222529;
-}
-main .mainGrid .tabSelectorV #visaTab1:checked ~ .tabArticleWrapper > #visaItem1,
-main .mainGrid .tabSelectorV #visaTab2:checked ~ .tabArticleWrapper > #visaItem2,
-main .mainGrid .tabSelectorV #visaTab3:checked ~ .tabArticleWrapper > #visaItem3 {
-  display: block;
-  position: relative;
-  top: -8px;
-}
-
-main .mainGrid .tabSelectorS {
-  grid-column: span 6;
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-main .mainGrid .tabSelectorS label {
-  height: 200px;
-  color: white;
+main .mainGrid .tabSelector .tabContainerN #newsTabLabel1 {
   background-image: url("../img/visa-tiempo.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: none;
-  background-attachment: local;
 }
-main .mainGrid .tabSelectorS #servTab1:checked + label,
-main .mainGrid .tabSelectorS #servTab2:checked + label,
-main .mainGrid .tabSelectorS #servTab3:checked + label {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/visa-tiempo.jpg");
+main .mainGrid .tabSelector #newsTab1:checked ~ .tabContainerN #newsTabLabel1,
+main .mainGrid .tabSelector #newsTab2:checked ~ .tabContainerN #newsTabLabel2,
+main .mainGrid .tabSelector #newsTab3:checked ~ .tabContainerN #newsTabLabel3,
+main .mainGrid .tabSelector #newsTab4:checked ~ .tabContainerN #newsTabLabel4 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
   color: white;
 }
-main .mainGrid .tabSelectorS #servTab1:checked ~ .tabArticleWrapper > #servItem1,
-main .mainGrid .tabSelectorS #servTab2:checked ~ .tabArticleWrapper > #servItem2,
-main .mainGrid .tabSelectorS #servTab3:checked ~ .tabArticleWrapper > #servItem3 {
+main .mainGrid .tabSelector #newsTab1:checked ~ .tabArticleWrapper #newsItem1,
+main .mainGrid .tabSelector #newsTab2:checked ~ .tabArticleWrapper #newsItem2,
+main .mainGrid .tabSelector #newsTab3:checked ~ .tabArticleWrapper #newsItem3,
+main .mainGrid .tabSelector #newsTab4:checked ~ .tabArticleWrapper #newsItem4 {
   display: block;
-  position: relative;
-  top: -8px;
+}
+
+main .mainGrid .tabSelector .tabContainerV {
+  grid-template-columns: repeat(3, 1fr);
+}
+main .mainGrid .tabSelector #visaTab1:checked ~ .tabContainerV #visaTabLabel1,
+main .mainGrid .tabSelector #visaTab2:checked ~ .tabContainerV #visaTabLabel2,
+main .mainGrid .tabSelector #visaTab3:checked ~ .tabContainerV #visaTabLabel3 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41));
+  color: white;
+}
+main .mainGrid .tabSelector #visaTab1:checked ~ .tabArticleWrapper > #visaItem1,
+main .mainGrid .tabSelector #visaTab2:checked ~ .tabArticleWrapper > #visaItem2,
+main .mainGrid .tabSelector #visaTab3:checked ~ .tabArticleWrapper > #visaItem3 {
+  display: block;
+}
+
+main .mainGrid .tabSelector .tabContainerS {
+  grid-template-columns: repeat(3, 1fr);
+}
+main .mainGrid .tabSelector #servTab1:checked ~ .tabContainerS #servTabLabel1,
+main .mainGrid .tabSelector #servTab2:checked ~ .tabContainerS #servTabLabel2,
+main .mainGrid .tabSelector #servTab3:checked ~ .tabContainerS #servTabLabel3 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
+  color: white;
+}
+main .mainGrid .tabSelector #servTab1:checked ~ .tabArticleWrapper > #servItem1,
+main .mainGrid .tabSelector #servTab2:checked ~ .tabArticleWrapper > #servItem2,
+main .mainGrid .tabSelector #servTab3:checked ~ .tabArticleWrapper > #servItem3 {
+  display: block;
 }
 
 main .mainGrid .mainForm {
@@ -505,22 +475,22 @@ main .mainGrid .mainForm {
   body main .mainGrid .mainForm {
     padding: 10px;
   }
-  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph p, body main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph p, body main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph p {
+  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph p {
     padding: 0 10px 0 10px;
   }
-  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h2, body main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph h2, body main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph h2 {
+  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h2 {
     padding: 10px 10px 0 10px;
   }
-  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h3, body main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph h3, body main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph h3 {
+  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h3 {
     padding: 10px 0 0 10px;
   }
-  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph ul, body main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph ul, body main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph ul {
+  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph ul {
     padding: 0 10px 0 36px;
   }
-  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier, body main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph .imageCarrier, body main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph .imageCarrier {
+  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier {
     flex-direction: column;
   }
-  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier img, body main .mainGrid .tabSelectorV .tabArticleWrapper .mainParagraph .imageCarrier img, body main .mainGrid .tabSelectorS .tabArticleWrapper .mainParagraph .imageCarrier img {
+  body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier img {
     width: 100%;
     height: 100%;
   }

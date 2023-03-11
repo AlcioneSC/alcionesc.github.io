@@ -1,31 +1,19 @@
 main {
     .mainGrid {
-        .tabSelectorS {
-            @include inputGen(3);
-            @extend .tabSelector;
-            label {
-                height: 200px;
-                color: white;
-                background-image: url("../img/visa-tiempo.jpg");
-                @include backgroundGen()
+        .tabSelector {
+            .tabContainerS {
+                grid-template-columns: repeat(3, 1fr);
             }
-
-            #servTab1,
-            #servTab2,
-            #servTab3 {
-                &:checked {
-                    + label {
-                        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("../img/visa-tiempo.jpg");
-                        color: white;
-                    }
-                }
+            #servTab1:checked ~ .tabContainerS #servTabLabel1,
+            #servTab2:checked ~ .tabContainerS #servTabLabel2,
+            #servTab3:checked ~ .tabContainerS #servTabLabel3 {
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-tiempo.jpg");
+                color: white;
             }
             #servTab1:checked ~ .tabArticleWrapper > #servItem1,
             #servTab2:checked ~ .tabArticleWrapper > #servItem2,
             #servTab3:checked ~ .tabArticleWrapper > #servItem3 {
                 display: block;
-                position: relative;
-                top: -8px;
             }
         }
     }
