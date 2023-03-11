@@ -3,11 +3,26 @@ main {
         .tabSelector {
             .tabContainerV {
                 grid-template-columns: repeat(3, 1fr);
+                #visaTabLabel1 {
+                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-reapertura.jpg");
+                }
+                #visaTabLabel2 {
+                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-reapertura.jpg");
+                }
+                #visaTabLabel3 {
+                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-reapertura.jpg");
+                }
             }
-            #visaTab1:checked ~ .tabContainerV #visaTabLabel1,
-            #visaTab2:checked ~ .tabContainerV #visaTabLabel2,
+            #visaTab1:checked ~ .tabContainerV #visaTabLabel1 {
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-reapertura.jpg");
+                color: white;
+            }
+            #visaTab2:checked ~ .tabContainerV #visaTabLabel2 {
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-reapertura.jpg");
+                color: white;
+            }
             #visaTab3:checked ~ .tabContainerV #visaTabLabel3 {
-                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1));
+                background-image: linear-gradient(rgba(34,37,41,0.5), rgba(34,37,41,1)), url("../img/visa-reapertura.jpg");
                 color: white;
             }
             #visaTab1:checked ~ .tabArticleWrapper > #visaItem1,

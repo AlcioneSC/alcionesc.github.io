@@ -98,6 +98,7 @@ main .mainGrid .tabSelector .mainTabs {
 }
 main .mainGrid .tabSelector .tabContainer {
   display: grid;
+  gap: 2px;
 }
 main .mainGrid .tabSelector .tabContainer .tab {
   position: relative;
@@ -107,6 +108,7 @@ main .mainGrid .tabSelector .tabContainer .tab {
   background-position: 50% 50%;
   background-repeat: none;
   background-attachment: local;
+  cursor: pointer;
 }
 main .mainGrid .tabSelector .tabContainer .tab .tabHeader {
   position: absolute;
@@ -341,11 +343,29 @@ main .mainGrid .tabSelector .tabContainerN {
   grid-template-columns: repeat(4, 1fr);
 }
 main .mainGrid .tabSelector .tabContainerN #newsTabLabel1 {
-  background-image: url("../img/visa-tiempo.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
 }
-main .mainGrid .tabSelector #newsTab1:checked ~ .tabContainerN #newsTabLabel1,
-main .mainGrid .tabSelector #newsTab2:checked ~ .tabContainerN #newsTabLabel2,
-main .mainGrid .tabSelector #newsTab3:checked ~ .tabContainerN #newsTabLabel3,
+main .mainGrid .tabSelector .tabContainerN #newsTabLabel2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+}
+main .mainGrid .tabSelector .tabContainerN #newsTabLabel3 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+}
+main .mainGrid .tabSelector .tabContainerN #newsTabLabel4 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+}
+main .mainGrid .tabSelector #newsTab1:checked ~ .tabContainerN #newsTabLabel1 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
+  color: white;
+}
+main .mainGrid .tabSelector #newsTab2:checked ~ .tabContainerN #newsTabLabel2 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
+  color: white;
+}
+main .mainGrid .tabSelector #newsTab3:checked ~ .tabContainerN #newsTabLabel3 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
+  color: white;
+}
 main .mainGrid .tabSelector #newsTab4:checked ~ .tabContainerN #newsTabLabel4 {
   background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
   color: white;
@@ -360,10 +380,25 @@ main .mainGrid .tabSelector #newsTab4:checked ~ .tabArticleWrapper #newsItem4 {
 main .mainGrid .tabSelector .tabContainerV {
   grid-template-columns: repeat(3, 1fr);
 }
-main .mainGrid .tabSelector #visaTab1:checked ~ .tabContainerV #visaTabLabel1,
-main .mainGrid .tabSelector #visaTab2:checked ~ .tabContainerV #visaTabLabel2,
+main .mainGrid .tabSelector .tabContainerV #visaTabLabel1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-reapertura.jpg");
+}
+main .mainGrid .tabSelector .tabContainerV #visaTabLabel2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-reapertura.jpg");
+}
+main .mainGrid .tabSelector .tabContainerV #visaTabLabel3 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-reapertura.jpg");
+}
+main .mainGrid .tabSelector #visaTab1:checked ~ .tabContainerV #visaTabLabel1 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-reapertura.jpg");
+  color: white;
+}
+main .mainGrid .tabSelector #visaTab2:checked ~ .tabContainerV #visaTabLabel2 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-reapertura.jpg");
+  color: white;
+}
 main .mainGrid .tabSelector #visaTab3:checked ~ .tabContainerV #visaTabLabel3 {
-  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41));
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-reapertura.jpg");
   color: white;
 }
 main .mainGrid .tabSelector #visaTab1:checked ~ .tabArticleWrapper > #visaItem1,
@@ -375,8 +410,23 @@ main .mainGrid .tabSelector #visaTab3:checked ~ .tabArticleWrapper > #visaItem3 
 main .mainGrid .tabSelector .tabContainerS {
   grid-template-columns: repeat(3, 1fr);
 }
-main .mainGrid .tabSelector #servTab1:checked ~ .tabContainerS #servTabLabel1,
-main .mainGrid .tabSelector #servTab2:checked ~ .tabContainerS #servTabLabel2,
+main .mainGrid .tabSelector .tabContainerS #servTabLabel1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+}
+main .mainGrid .tabSelector .tabContainerS #servTabLabel2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-rechazo.jpg");
+}
+main .mainGrid .tabSelector .tabContainerS #servTabLabel3 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+}
+main .mainGrid .tabSelector #servTab1:checked ~ .tabContainerS #servTabLabel1 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
+  color: white;
+}
+main .mainGrid .tabSelector #servTab2:checked ~ .tabContainerS #servTabLabel2 {
+  background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-rechazo.jpg");
+  color: white;
+}
 main .mainGrid .tabSelector #servTab3:checked ~ .tabContainerS #servTabLabel3 {
   background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
   color: white;

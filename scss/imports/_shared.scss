@@ -93,11 +93,13 @@ main {
             }
             .tabContainer {
                 display: grid;
+                gap: 2px;
                 .tab {
                     position: relative;
                     height: 200px;
                     overflow: hidden;
-                    @include backgroundGen(); 
+                    @include backgroundGen();
+                    cursor: pointer;
                     .tabHeader {
                         position: absolute;
                         padding: 12px 12px 0 12px;

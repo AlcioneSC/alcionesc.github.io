@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1580 880" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
+<svg width="100%" height="100%" viewBox="0 0 1540 840" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
     <g>
         <g>
             <g>
-                <path d="M155,638.834L1545,638.834M155,573.832L1545,573.832M155,509.829L1545,509.829M155,444.827L1545,444.827M155,379.825L1545,379.825M155,315.823L1545,315.823M155,250.821L1545,250.821M155,186.819L1545,186.819M155,121.817L1545,121.817M155,56.807L1545,56.807" style="fill:none;fill-rule:nonzero;stroke:rgb(217,217,217);stroke-width:3.44px;"/>
+                <path d="M131.384,611.85L1521.38,611.85M131.384,546.848L1521.38,546.848M131.384,482.845L1521.38,482.845M131.384,417.843L1521.38,417.843M131.384,352.841L1521.38,352.841M131.384,288.839L1521.38,288.839M131.384,223.837L1521.38,223.837M131.384,159.835L1521.38,159.835M131.384,94.833L1521.38,94.833M131.384,29.823L1521.38,29.823" style="fill:none;fill-rule:nonzero;stroke:rgb(217,217,217);stroke-width:3.44px;"/>
             </g>
             <g>
-                <path d="M155,703.807L1545,703.807" style="fill:none;stroke:rgb(217,217,217);stroke-width:3.44px;"/>
+                <path d="M131.384,676.823L1521.38,676.823" style="fill:none;stroke:rgb(217,217,217);stroke-width:3.44px;"/>
             </g>
             <g>
-                <path d="M224.5,668.335L363.56,669.335L502.56,656.334L641.57,640.334L780.57,634.333L919.58,590.332L1058.58,583.307L1197.59,588.332L1336.59,607.333L1475.5,676.307" style="fill:none;fill-rule:nonzero;stroke:rgb(68,114,196);stroke-width:10.31px;stroke-linecap:round;"/>
+                <path d="M200.884,641.351L339.944,642.351L478.944,629.35L617.954,613.35L756.954,607.349L895.964,563.348L1034.96,556.323L1173.97,561.348L1312.97,580.349L1451.88,649.323" style="fill:none;fill-rule:nonzero;stroke:rgb(68,114,196);stroke-width:10.31px;stroke-linecap:round;"/>
             </g>
             <g>
-                <path d="M224.5,564.307L363.56,528.33L502.56,522.33L641.57,479.328L780.57,471.328L919.58,363.325L1058.58,137.307L1197.59,279.322L1336.59,446.327L1475.5,542.33" style="fill:none;fill-rule:nonzero;stroke:rgb(237,125,49);stroke-width:10.31px;stroke-linecap:round;"/>
+                <path d="M200.884,537.323L339.944,501.346L478.944,495.346L617.954,452.344L756.954,444.344L895.964,336.341L1034.96,110.323L1173.97,252.338L1312.97,419.343L1451.88,515.346" style="fill:none;fill-rule:nonzero;stroke:rgb(237,125,49);stroke-width:10.31px;stroke-linecap:round;"/>
             </g>
             <g>
                 <g>
-                    <text x="128.692px" y="711.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">0</text>
+                    <text x="105.077px" y="684.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">0</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="54.472px" y="646.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">50.000</text>
+                    <text x="30.857px" y="619.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">50.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="582.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">100.000</text>
+                    <text x="14.917px" y="555.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">100.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="517.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">150.000</text>
+                    <text x="14.917px" y="490.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">150.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="452.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">200.000</text>
+                    <text x="14.917px" y="425.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">200.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="388.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">250.000</text>
+                    <text x="14.917px" y="361.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">250.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="323.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">300.000</text>
+                    <text x="14.917px" y="296.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">300.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="259.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">350.000</text>
+                    <text x="14.917px" y="232.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">350.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="194.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">400.000</text>
+                    <text x="14.917px" y="167.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">400.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="129.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">450.000</text>
+                    <text x="14.917px" y="102.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">450.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="38.532px" y="65.55px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">500.000</text>
+                    <text x="14.917px" y="38.566px" style="font-family:'Helvetica';font-size:30px;fill:rgb(89,89,89);">500.000</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="178.77px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2012</text>
+                    <text x="155.154px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2012</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="317.72px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2013</text>
+                    <text x="294.104px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2013</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="456.67px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2014</text>
+                    <text x="433.054px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2014</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="595.62px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2015</text>
+                    <text x="572.004px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2015</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="734.57px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2016</text>
+                    <text x="710.954px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2016</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="873.51px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2017</text>
+                    <text x="849.894px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2017</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="1012.46px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2018</text>
+                    <text x="988.844px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2018</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="1151.41px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2019</text>
+                    <text x="1127.79px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2019</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="1290.36px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2020</text>
+                    <text x="1266.74px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2020</text>
                 </g>
             </g>
             <g>
                 <g>
-                    <text x="1429.31px" y="756.307px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2021</text>
+                    <text x="1405.69px" y="729.323px" style="font-family:'Helvetica';font-size:41px;fill:rgb(89,89,89);">2021</text>
                 </g>
             </g>
             <g>
-                <path d="M332.5,829.307L420.5,829.307" style="fill:none;stroke:rgb(68,114,196);stroke-width:10.31px;stroke-linecap:round;"/>
+                <path d="M308.884,802.323L396.884,802.323" style="fill:none;stroke:rgb(68,114,196);stroke-width:10.31px;stroke-linecap:round;"/>
             </g>
             <g>
                 <g>
-                    <text x="437.44px" y="838.307px" style="font-family:'Helvetica';font-size:28px;fill:rgb(89,89,89);">Permanencia deﬁnitiva</text>
+                    <text x="413.824px" y="811.323px" style="font-family:'Helvetica';font-size:28px;fill:rgb(89,89,89);">Permanencia deﬁnitiva</text>
                 </g>
             </g>
             <g>
-                <path d="M915.5,829.307L1003.5,829.307" style="fill:none;stroke:rgb(237,125,49);stroke-width:10.31px;stroke-linecap:round;"/>
+                <path d="M891.884,802.323L979.884,802.323" style="fill:none;stroke:rgb(237,125,49);stroke-width:10.31px;stroke-linecap:round;"/>
             </g>
             <g>
                 <g>
-                    <text x="1018.28px" y="837.307px" style="font-family:'Helvetica';font-size:28px;fill:rgb(89,89,89);">Temporaria</text>
+                    <text x="994.664px" y="810.323px" style="font-family:'Helvetica';font-size:28px;fill:rgb(89,89,89);">Temporaria</text>
                 </g>
             </g>
         </g>
