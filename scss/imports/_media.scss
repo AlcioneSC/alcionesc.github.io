@@ -24,7 +24,7 @@
                 height: 50vh;
                 .secondaryFloating {
                     bottom: $mobMargin;
-                    left: $mobMargin;
+                    padding-left: $mobMargin;
                 }
             }
         }
@@ -90,11 +90,18 @@
                 }
                 .headerAlert {
                     grid-column: span 6;
+                    padding: $mobMargin $mobMargin 0 $mobMargin;
                 }
                 .mainForm {
                     padding: $mobMargin;
                 }
                 .tabSelector {
+                    .tabContainer {
+                        .tab {
+                            grid-column: span 6;
+                            height: 90px;
+                        }
+                    }
                     .tabArticleWrapper {
                         .mainParagraph {
                             p {
@@ -104,10 +111,10 @@
                                 padding: $mobMargin $mobMargin 0 $mobMargin;
                             }
                             h3 {
-                                padding: $mobMargin 0 0 $mobMargin;
+                                padding: 0 $mobMargin 0 $mobMargin;
                             }
                             ul {
-                                padding: 0 $mobMargin 0 $margin;
+                                padding: 0 $mobMargin 0 26px;
                             }
                             .imageCarrier {
                                 flex-direction: column;
@@ -127,9 +134,19 @@
 //  Tabletas    
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
+        header {
+            .secondaryHeader {
+                height: 50vh;
+                .secondaryFloating {
+                    bottom: $mobMargin;
+                    padding-left: $margin;
+                }
+            }
+        }
         main {
             .imageStack {
                 .floatingHeader {
+                    bottom: $mobMargin;
                     h1 {
                         font-size: $size2;
                     }

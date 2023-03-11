@@ -55,7 +55,6 @@ header .secondaryHeader .secondaryFloating {
   max-width: 80%;
   position: absolute;
   bottom: 36px;
-  left: 0;
   padding-left: 36px;
   -webkit-backdrop-filter: blur(10px) brightness(70%);
   backdrop-filter: blur(10px) brightness(70%);
@@ -411,13 +410,13 @@ main .mainGrid .tabSelector .tabContainerS {
   grid-template-columns: repeat(3, 1fr);
 }
 main .mainGrid .tabSelector .tabContainerS #servTabLabel1 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
 }
 main .mainGrid .tabSelector .tabContainerS #servTabLabel2 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-rechazo.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgb(255, 255, 255)), url("../img/visa-rechazo.jpg");
 }
 main .mainGrid .tabSelector .tabContainerS #servTabLabel3 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgb(255, 255, 255)), url("../img/visa-tiempo.jpg");
 }
 main .mainGrid .tabSelector #servTab1:checked ~ .tabContainerS #servTabLabel1 {
   background-image: linear-gradient(rgba(34, 37, 41, 0.5), rgb(34, 37, 41)), url("../img/visa-tiempo.jpg");
@@ -463,7 +462,7 @@ main .mainGrid .mainForm {
   }
   body header .secondaryHeader .secondaryFloating {
     bottom: 10px;
-    left: 10px;
+    padding-left: 10px;
   }
   body main .imageStack .floatingHeader {
     bottom: 10px;
@@ -521,9 +520,14 @@ main .mainGrid .mainForm {
   }
   body main .mainGrid .headerAlert {
     grid-column: span 6;
+    padding: 10px 10px 0 10px;
   }
   body main .mainGrid .mainForm {
     padding: 10px;
+  }
+  body main .mainGrid .tabSelector .tabContainer .tab {
+    grid-column: span 6;
+    height: 90px;
   }
   body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph p {
     padding: 0 10px 0 10px;
@@ -532,10 +536,10 @@ main .mainGrid .mainForm {
     padding: 10px 10px 0 10px;
   }
   body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h3 {
-    padding: 10px 0 0 10px;
+    padding: 0 10px 0 10px;
   }
   body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph ul {
-    padding: 0 10px 0 36px;
+    padding: 0 10px 0 26px;
   }
   body main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier {
     flex-direction: column;
@@ -546,6 +550,16 @@ main .mainGrid .mainForm {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  body header .secondaryHeader {
+    height: 50vh;
+  }
+  body header .secondaryHeader .secondaryFloating {
+    bottom: 10px;
+    padding-left: 36px;
+  }
+  body main .imageStack .floatingHeader {
+    bottom: 10px;
+  }
   body main .imageStack .floatingHeader h1 {
     font-size: 52pt;
   }

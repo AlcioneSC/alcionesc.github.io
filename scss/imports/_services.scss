@@ -4,13 +4,13 @@ main {
             .tabContainerS {
                 grid-template-columns: repeat(3, 1fr);
                 #servTabLabel1 {
-                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");
+                    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");
                 }
                 #servTabLabel2 {
-                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-rechazo.jpg");
+                    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url("../img/visa-rechazo.jpg");
                 }
                 #servTabLabel3 {
-                    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");
+                    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url("../img/visa-tiempo.jpg");
                 }
             }
             #servTab1:checked ~ .tabContainerS #servTabLabel1 {
