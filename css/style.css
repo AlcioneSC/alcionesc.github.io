@@ -66,7 +66,7 @@ header .secondaryHeader .secondaryFloating h1 {
 
 main .mainGrid {
   display: grid;
-  grid-template-columns: 56px repeat(6, 2fr) 36px;
+  grid-template-columns: 56px repeat(6, 1fr) 36px;
   margin-top: 10px;
   gap: 10px;
 }
@@ -79,10 +79,9 @@ main .mainGrid .socialSpan .socialNetwork {
   position: -webkit-sticky;
   position: sticky;
   top: 74px;
-  width: 64px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 10px;
 }
 main .mainGrid .socialSpan .socialNetwork img {
@@ -305,16 +304,16 @@ main .mainGrid .presentationMainCard .presentationImageCard img {
 main .mainGrid .presentationMainCard .presentationTextCard {
   position: relative;
   top: 26px;
+  width: calc(100% - 240px);
+  height: 90%;
   left: 36px;
   color: #222529;
 }
 main .mainGrid .presentationMainCard .presentationTextCard p {
-  width: calc(100% - 240px);
   -webkit-backdrop-filter: blur(10px) brightness(120%);
   backdrop-filter: blur(10px) brightness(120%);
 }
 main .mainGrid .presentationMainCard .presentationTextCard .presentationMainTitle h2 {
-  width: 90%;
   color: #222529;
 }
 main .mainGrid .headerMain {
@@ -497,7 +496,7 @@ main .mainGrid .mainForm {
     gap: 5px;
   }
   body main .mainGrid .socialSpan .socialNetwork {
-    width: 36px;
+    align-items: flex-start;
   }
   body main .mainGrid .socialSpan .socialNetwork img {
     width: 32px;
@@ -524,10 +523,8 @@ main .mainGrid .mainForm {
   body main .mainGrid .presentationMainCard .presentationTextCard {
     left: 10px;
     top: 0;
-    align-self: flex-end;
-  }
-  body main .mainGrid .presentationMainCard .presentationTextCard p {
     width: 90%;
+    align-self: flex-end;
   }
   body main .mainGrid .headerMain {
     margin-top: 26px;
@@ -615,7 +612,7 @@ main .mainGrid .mainForm {
     height: auto;
     opacity: 0.3;
   }
-  body main .mainGrid .presentationMainCard .presentationTextCard p {
+  body main .mainGrid .presentationMainCard .presentationTextCard {
     width: calc(100% - 20vw);
   }
 }

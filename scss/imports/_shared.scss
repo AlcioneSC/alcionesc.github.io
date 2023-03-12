@@ -55,7 +55,7 @@ header {
 main {
     .mainGrid {
         display: grid;
-        grid-template-columns: 56px repeat(6, 2fr) $margin;
+        grid-template-columns: 56px repeat(6, 1fr) $margin;
         margin-top: 10px;
         gap: 10px;
         .socialSpan {
@@ -66,10 +66,9 @@ main {
                 position: -webkit-sticky;
                 position: sticky;
                 top: 74px;
-                width: 64px;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-end;
                 gap: 10px;
                 img {
                     width: 48px;

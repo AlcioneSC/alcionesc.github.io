@@ -105,16 +105,16 @@ main {
             .presentationTextCard {
                 position: relative;
                 top: 26px;
+                width: calc(100% - 240px);
+                height: 90%;
                 left: $margin;
                 color: $bs-dark;
                 p {
-                    width: calc(100% - 240px);
                     -webkit-backdrop-filter: blur(10px) brightness(120%);
                     backdrop-filter: blur(10px) brightness(120%);
                 }
                 .presentationMainTitle {
                     h2 {
-                        width: 90%;
                         color: $bs-dark;
                     }
                 }
