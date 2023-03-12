@@ -174,15 +174,23 @@ main {
 
 footer {
     display: flex;
+    justify-content: flex-end;
     size: 100%;
-    padding: 3em 2em 2em calc(100vw - 280px);
+    padding: 3em 4em 3em 2em;
     color: white;
-    font-size: $size7;
-    hr {
-        border: 0.1em solid white;
-        margin: 3px 0 2px 0;
-    }
-    .miau {
-        font-weight: bold;
+    div {
+        h3 {
+            font-size: $size4;
+        }
+        p {
+            font-size: $size7;
+        }
+        hr {
+            border: 0.1em solid white;
+            margin: 3px 0 2px 0;
+        }
+        .miau {
+            font-weight: bold;
+        }    
     }
 }

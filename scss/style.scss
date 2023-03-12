@@ -11,6 +11,7 @@
 // Advertencia: en este proyecto el generador SASS fue configurado para emitir un solo
 // archivo CSS minificado. El verdadero código fuente es SASS.
 
+@import url('https://fonts.cdnfonts.com/css/din-alternate');
 @import "./imports/vars";
 @import "./imports/global";
 @import "./imports/shared";
@@ -20,4 +21,3 @@
 @import "./imports/services";
 @import "./imports/contact";
 @import "./imports/media";
-@import url('https://fonts.cdnfonts.com/css/din-alternate');
