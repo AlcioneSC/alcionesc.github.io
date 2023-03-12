@@ -86,12 +86,13 @@ main {
         }
         .presentationMainCard {
             grid-column: span 4;
+            padding-top: 26px;
+            min-height: 340px;
             display: flex;
             flex-direction: row;
             position: relative;
             background-image: $gradientPlain;
             width: 100%;
-            min-height: 360px;
             .presentationImageCard {
                 position: absolute;
                 right: 0px;
@@ -104,19 +105,12 @@ main {
             }
             .presentationTextCard {
                 position: relative;
-                top: 26px;
                 width: calc(100% - 240px);
-                height: 90%;
                 left: $margin;
                 color: $bs-dark;
                 p {
                     -webkit-backdrop-filter: blur(10px) brightness(120%);
                     backdrop-filter: blur(10px) brightness(120%);
-                }
-                .presentationMainTitle {
-                    h2 {
-                        color: $bs-dark;
-                    }
                 }
             }
         }
@@ -128,17 +122,20 @@ main {
         .mSquare {
             @include backgroundGen();
             color: white;
-            padding: 1em;
+            padding: 0 0 $margin $margin;
             min-height: 400px;
             position: relative;
             grid-column: span 3;
             div {
                 position: absolute;
                 bottom: 0;
-                padding: $margin;
+                padding: $vmargin;
                 @include mainBlur();
                 > h3 {
                     text-shadow: 2px 2px 4px black;
+                }
+                > p {
+                    margin: 0;
                 }
             }
         }

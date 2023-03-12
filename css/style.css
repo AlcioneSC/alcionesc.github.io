@@ -284,12 +284,13 @@ main .mainGrid .highlightedGridItem {
 }
 main .mainGrid .presentationMainCard {
   grid-column: span 4;
+  padding-top: 26px;
+  min-height: 340px;
   display: flex;
   flex-direction: row;
   position: relative;
   background-image: linear-gradient(to top, #9caebb 0%, #e2ebf0 100%);
   width: 100%;
-  min-height: 360px;
 }
 main .mainGrid .presentationMainCard .presentationImageCard {
   position: absolute;
@@ -303,18 +304,13 @@ main .mainGrid .presentationMainCard .presentationImageCard img {
 }
 main .mainGrid .presentationMainCard .presentationTextCard {
   position: relative;
-  top: 26px;
   width: calc(100% - 240px);
-  height: 90%;
   left: 36px;
   color: #222529;
 }
 main .mainGrid .presentationMainCard .presentationTextCard p {
   -webkit-backdrop-filter: blur(10px) brightness(120%);
   backdrop-filter: blur(10px) brightness(120%);
-}
-main .mainGrid .presentationMainCard .presentationTextCard .presentationMainTitle h2 {
-  color: #222529;
 }
 main .mainGrid .headerMain {
   line-height: 0.7em;
@@ -327,7 +323,7 @@ main .mainGrid .mSquare {
   background-repeat: none;
   background-attachment: local;
   color: white;
-  padding: 1em;
+  padding: 0 0 36px 36px;
   min-height: 400px;
   position: relative;
   grid-column: span 3;
@@ -335,12 +331,15 @@ main .mainGrid .mSquare {
 main .mainGrid .mSquare div {
   position: absolute;
   bottom: 0;
-  padding: 36px;
+  padding: 26px;
   -webkit-backdrop-filter: blur(10px) brightness(70%);
   backdrop-filter: blur(10px) brightness(70%);
 }
 main .mainGrid .mSquare div > h3 {
   text-shadow: 2px 2px 4px black;
+}
+main .mainGrid .mSquare div > p {
+  margin: 0;
 }
 main .mainGrid #accelSquare {
   background-image: url("../img/visa-tiempo.jpg");
@@ -495,9 +494,6 @@ main .mainGrid .mainForm {
     grid-template-columns: 32px repeat(6, 2fr);
     gap: 5px;
   }
-  body main .mainGrid .socialSpan .socialNetwork {
-    align-items: flex-start;
-  }
   body main .mainGrid .socialSpan .socialNetwork img {
     width: 32px;
     height: 32px;
@@ -522,7 +518,7 @@ main .mainGrid .mainForm {
   }
   body main .mainGrid .presentationMainCard .presentationTextCard {
     left: 10px;
-    top: 0;
+    bottom: 0;
     width: 90%;
     align-self: flex-end;
   }
@@ -534,6 +530,7 @@ main .mainGrid .mainForm {
     min-height: 280px;
   }
   body main .mainGrid .mSquare div {
+    left: 10px;
     padding: 10px;
   }
   body main .mainGrid .headerAlert {
