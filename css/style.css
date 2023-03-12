@@ -136,7 +136,6 @@ main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .imageCarrier .leg
 }
 main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph p {
   padding: 0 36px 0 36px;
-  margin-bottom: 0.7em;
 }
 main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph .quoteMP {
   padding: 0 64px 0 64px;
@@ -149,7 +148,7 @@ main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h2 {
   color: white;
 }
 main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph h3 {
-  padding: 14px 36px 0 36px;
+  padding: 16px 36px 0 36px;
 }
 main .mainGrid .tabSelector .tabArticleWrapper .mainParagraph ul {
   padding: 0 36px 0 60px;

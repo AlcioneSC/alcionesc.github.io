@@ -69,7 +69,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                gap: 10px;
+                gap: $mobMargin;
                 img {
                     width: 48px;
                     height: 48px;
@@ -118,7 +118,6 @@ main {
                     }
                     p {
                         padding: 0 $margin 0 $margin;
-                        margin-bottom: 0.7em;
                     }
                     .quoteMP {
                         padding: 0 64px 0 64px;
@@ -131,7 +130,7 @@ main {
                         color: white;
                     }
                     h3 {
-                        padding: 14px $margin 0 $margin;
+                        padding: 16px $margin 0 $margin;
                     }
                     ul {
                         padding: 0 $margin 0 60px;
